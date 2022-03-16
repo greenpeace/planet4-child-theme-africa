@@ -184,22 +184,36 @@ function gp_get_the_category_list($post_id) {
 	return apply_filters( 'the_category', $thelist, $separator, $parents );
 }
 
-// Install required plugins
+// Allow SVG
+add_filter( 'wp_check_filetype_and_ext', function($data, $file, $filename, $mimes) {
 
-$requiredPlugins = array(
-	"advanced-custom-fields",
-	"clear-cache-for-timber",
-	"custom-post-type-ui",
-	"related-posts-by-taxonomy",
-	"search-filter-pro",
-	"svg-support",
-	"wp-show-posts"
-);
+  global $wp_version;
+  if ( $wp_version !== '4.7.1' ) {
+     return $data;
+  }
 
-foreach ($requiredPlugins as $requiredPlugin) {
-	$source         = WP_CONTENT_DIR . '/themes/planet4-child-theme-africa/required-plugins/' . $requiredPlugin;
-	$target         = WP_PLUGIN_DIR . '/' . $requiredPlugin;
-	if (file_exists($source)) {
-	    rename($source, $target);
-	}
+  $filetype = wp_check_filetype( $filename, $mimes );
+
+  return [
+      'ext'             => $filetype['ext'],
+      'type'            => $filetype['type'],
+      'proper_filename' => $data['proper_filename']
+  ];
+
+}, 10, 4 );
+
+function cc_mime_types( $mimes ){
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
 }
+add_filter( 'upload_mimes', 'cc_mime_types' );
+
+function fix_svg() {
+  echo '<style type="text/css">
+        .attachment-266x266, .thumbnail img {
+             width: 100% !important;
+             height: auto !important;
+        }
+        </style>';
+}
+add_action( 'admin_head', 'fix_svg' );
