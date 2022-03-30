@@ -1,3 +1,4 @@
+<div class="allSearchResults">
 <?php
 /**
  * Search & Filter Pro
@@ -44,51 +45,6 @@ if ( $query->have_posts() )
 {
 	?>
 
-    <style>
-        button.show-more-button {
-            background-color: #F36D3A !important;
-            box-shadow: 0px 3px 6px #00000029 !important;
-            opacity: 80%;
-            color: white !important;
-            font-size: 20px;
-            height: 70px;
-            font-family: Roboto;
-        }
-
-        button.show-more-button.show-more-button-contracted::after {
-            content: '▼';
-            padding-left: 10px;
-        }
-
-        button.show-more-button.show-more-button-expanded::after {
-            content: '▲';
-            padding-left: 10px;
-        }
-
-        li.sf-field-search > label {
-            display: inline-flex !important;
-            align-items: center !important;
-            justify-content: space-between !important;
-        }
-
-
-        .sf-field-tag ul {
-            height: unset !important;
-        }
-
-        .share-buttons {
-            justify-content: end;
-        }
-
-        .share-buttons-loop img {
-            filter: invert();
-            height: 25px !important;
-        }
-
-        .share-buttons-loop a::after {
-            content: none !important;
-        }
-    </style>
 	<div class="results-number-search"> Found <?php echo $query->found_posts; ?> Results<br />
 	Page <?php echo $query->query['paged']; ?> of <?php echo $query->max_num_pages; ?><br /></div>
 
@@ -213,3 +169,4 @@ else
 	echo "No Results Found";
 }
 ?>
+</div>
