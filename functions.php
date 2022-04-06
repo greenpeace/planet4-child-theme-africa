@@ -217,3 +217,145 @@ function fix_svg() {
         </style>';
 }
 add_action( 'admin_head', 'fix_svg' );
+
+function cptui_register_my_cpts() {
+
+	/**
+	 * Post Type: Audio Posts.
+	 */
+
+	$labels = [
+		"name" => __( "Audio Posts", "planet4-child-theme-africa" ),
+		"singular_name" => __( "Audio Post", "planet4-child-theme-africa" ),
+		"menu_name" => __( "My Audio Posts", "planet4-child-theme-africa" ),
+		"all_items" => __( "All Audio Posts", "planet4-child-theme-africa" ),
+		"add_new" => __( "Add new", "planet4-child-theme-africa" ),
+		"add_new_item" => __( "Add new Audio Post", "planet4-child-theme-africa" ),
+		"edit_item" => __( "Edit Audio Post", "planet4-child-theme-africa" ),
+		"new_item" => __( "New Audio Post", "planet4-child-theme-africa" ),
+		"view_item" => __( "View Audio Post", "planet4-child-theme-africa" ),
+		"view_items" => __( "View Audio Posts", "planet4-child-theme-africa" ),
+		"search_items" => __( "Search Audio Posts", "planet4-child-theme-africa" ),
+		"not_found" => __( "No Audio Posts found", "planet4-child-theme-africa" ),
+		"not_found_in_trash" => __( "No Audio Posts found in trash", "planet4-child-theme-africa" ),
+		"parent" => __( "Parent Audio Post:", "planet4-child-theme-africa" ),
+		"featured_image" => __( "Featured image for this Audio Post", "planet4-child-theme-africa" ),
+		"set_featured_image" => __( "Set featured image for this Audio Post", "planet4-child-theme-africa" ),
+		"remove_featured_image" => __( "Remove featured image for this Audio Post", "planet4-child-theme-africa" ),
+		"use_featured_image" => __( "Use as featured image for this Audio Post", "planet4-child-theme-africa" ),
+		"archives" => __( "Audio Post archives", "planet4-child-theme-africa" ),
+		"insert_into_item" => __( "Insert into Audio Post", "planet4-child-theme-africa" ),
+		"uploaded_to_this_item" => __( "Upload to this Audio Post", "planet4-child-theme-africa" ),
+		"filter_items_list" => __( "Filter Audio Posts list", "planet4-child-theme-africa" ),
+		"items_list_navigation" => __( "Audio Posts list navigation", "planet4-child-theme-africa" ),
+		"items_list" => __( "Audio Posts list", "planet4-child-theme-africa" ),
+		"attributes" => __( "Audio Posts attributes", "planet4-child-theme-africa" ),
+		"name_admin_bar" => __( "Audio Post", "planet4-child-theme-africa" ),
+		"item_published" => __( "Audio Post published", "planet4-child-theme-africa" ),
+		"item_published_privately" => __( "Audio Post published privately.", "planet4-child-theme-africa" ),
+		"item_reverted_to_draft" => __( "Audio Post reverted to draft.", "planet4-child-theme-africa" ),
+		"item_scheduled" => __( "Audio Post scheduled", "planet4-child-theme-africa" ),
+		"item_updated" => __( "Audio Post updated.", "planet4-child-theme-africa" ),
+		"parent_item_colon" => __( "Parent Audio Post:", "planet4-child-theme-africa" ),
+	];
+
+	$args = [
+		"label" => __( "Audio Posts", "planet4-child-theme-africa" ),
+		"labels" => $labels,
+		"description" => "",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"show_in_rest" => true,
+		"rest_base" => "",
+		"rest_controller_class" => "WP_REST_Posts_Controller",
+		"has_archive" => false,
+		"show_in_menu" => true,
+		"show_in_nav_menus" => true,
+		"delete_with_user" => false,
+		"exclude_from_search" => false,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"rewrite" => [ "slug" => "audio_post", "with_front" => true ],
+		"query_var" => true,
+		"supports" => [ "title", "editor", "thumbnail" ],
+		"taxonomies" => [ "category", "post_tag" ],
+		"show_in_graphql" => false,
+	];
+
+	register_post_type( "audio_post", $args );
+}
+
+add_action( 'init', 'cptui_register_my_cpts' );
+
+function cptui_register_my_cpts_audio_post() {
+
+	/**
+	 * Post Type: Audio Posts.
+	 */
+
+	$labels = [
+		"name" => __( "Audio Posts", "planet4-child-theme-africa" ),
+		"singular_name" => __( "Audio Post", "planet4-child-theme-africa" ),
+		"menu_name" => __( "My Audio Posts", "planet4-child-theme-africa" ),
+		"all_items" => __( "All Audio Posts", "planet4-child-theme-africa" ),
+		"add_new" => __( "Add new", "planet4-child-theme-africa" ),
+		"add_new_item" => __( "Add new Audio Post", "planet4-child-theme-africa" ),
+		"edit_item" => __( "Edit Audio Post", "planet4-child-theme-africa" ),
+		"new_item" => __( "New Audio Post", "planet4-child-theme-africa" ),
+		"view_item" => __( "View Audio Post", "planet4-child-theme-africa" ),
+		"view_items" => __( "View Audio Posts", "planet4-child-theme-africa" ),
+		"search_items" => __( "Search Audio Posts", "planet4-child-theme-africa" ),
+		"not_found" => __( "No Audio Posts found", "planet4-child-theme-africa" ),
+		"not_found_in_trash" => __( "No Audio Posts found in trash", "planet4-child-theme-africa" ),
+		"parent" => __( "Parent Audio Post:", "planet4-child-theme-africa" ),
+		"featured_image" => __( "Featured image for this Audio Post", "planet4-child-theme-africa" ),
+		"set_featured_image" => __( "Set featured image for this Audio Post", "planet4-child-theme-africa" ),
+		"remove_featured_image" => __( "Remove featured image for this Audio Post", "planet4-child-theme-africa" ),
+		"use_featured_image" => __( "Use as featured image for this Audio Post", "planet4-child-theme-africa" ),
+		"archives" => __( "Audio Post archives", "planet4-child-theme-africa" ),
+		"insert_into_item" => __( "Insert into Audio Post", "planet4-child-theme-africa" ),
+		"uploaded_to_this_item" => __( "Upload to this Audio Post", "planet4-child-theme-africa" ),
+		"filter_items_list" => __( "Filter Audio Posts list", "planet4-child-theme-africa" ),
+		"items_list_navigation" => __( "Audio Posts list navigation", "planet4-child-theme-africa" ),
+		"items_list" => __( "Audio Posts list", "planet4-child-theme-africa" ),
+		"attributes" => __( "Audio Posts attributes", "planet4-child-theme-africa" ),
+		"name_admin_bar" => __( "Audio Post", "planet4-child-theme-africa" ),
+		"item_published" => __( "Audio Post published", "planet4-child-theme-africa" ),
+		"item_published_privately" => __( "Audio Post published privately.", "planet4-child-theme-africa" ),
+		"item_reverted_to_draft" => __( "Audio Post reverted to draft.", "planet4-child-theme-africa" ),
+		"item_scheduled" => __( "Audio Post scheduled", "planet4-child-theme-africa" ),
+		"item_updated" => __( "Audio Post updated.", "planet4-child-theme-africa" ),
+		"parent_item_colon" => __( "Parent Audio Post:", "planet4-child-theme-africa" ),
+	];
+
+	$args = [
+		"label" => __( "Audio Posts", "planet4-child-theme-africa" ),
+		"labels" => $labels,
+		"description" => "",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"show_in_rest" => true,
+		"rest_base" => "",
+		"rest_controller_class" => "WP_REST_Posts_Controller",
+		"has_archive" => false,
+		"show_in_menu" => true,
+		"show_in_nav_menus" => true,
+		"delete_with_user" => false,
+		"exclude_from_search" => false,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"rewrite" => [ "slug" => "audio_post", "with_front" => true ],
+		"query_var" => true,
+		"supports" => [ "title", "editor", "thumbnail" ],
+		"taxonomies" => [ "category", "post_tag" ],
+		"show_in_graphql" => false,
+	];
+
+	register_post_type( "audio_post", $args );
+}
+
+add_action( 'init', 'cptui_register_my_cpts_audio_post' );
