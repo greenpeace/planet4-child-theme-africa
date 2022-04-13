@@ -24,7 +24,7 @@ Text Domain: planet4-child-theme-africa
     color: white !important;
     font-size: 20px;
     height: 70px;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
 }
 
 .allSearchResults button.show-more-button.show-more-button-contracted::after {
