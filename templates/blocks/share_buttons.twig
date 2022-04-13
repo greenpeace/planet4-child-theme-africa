@@ -3,28 +3,28 @@
 	<!-- Whatsapp -->
 	<a href="https://wa.me/?text=Listen to this, from Greenpeace Africa!%0D%0D {{ (socialLink ~ '&utm_source=whatsapp')|url_encode }}"
 		 onclick="dataLayer.push({'event' : 'uaevent', 'eventCategory' : 'Social Share', 'eventAction': 'Whatsapp', 'eventLabel': '{{ social.link }}'});"
-		 target="_blank" class="share-btn whatsapp">
+		 target="_blank" rel="noopener" class="share-btn whatsapp">
 		{{ 'whatsapp'|svgicon }}
 		<span class="visually-hidden">{{ __( 'Share on', 'planet4-master-theme' ) }} Whatsapp</span>
 	</a>
 	<!-- Facebook -->
 	<a href="https://www.facebook.com/sharer/sharer.php?u={{ (socialLink ~ '&utm_source=facebook')|url_encode }}&quote=Listen to this, from Greenpeace Africa!"
 		 onclick="dataLayer.push({'event' : 'uaevent', 'eventCategory' : 'Social Share', 'eventAction': 'Facebook', 'eventLabel': '{{ social.link }}'});"
-		 target="_blank" class="share-btn facebook">
+		 target="_blank" rel="noopener" class="share-btn facebook">
 		{{ 'facebook-f'|svgicon }}
 		<span class="visually-hidden">{{ __( 'Share on', 'planet4-master-theme' ) }} Facebook</span>
 	</a>
 	<!-- Twitter -->
 	<a href="https://twitter.com/intent/tweet?related={{ social_accounts.twitter }}&text=Listen to this, from Greenpeace Africa! via @{{ social_accounts.twitter }}&url={{ (socialLink ~ '&utm_source=twitter')|url_encode }}"
 		 onclick="dataLayer.push({'event' : 'uaevent', 'eventCategory' : 'Social Share', 'eventAction': 'Twitter', 'eventLabel': '{{ social.link }}'});"
-		 target="_blank" class="share-btn twitter">
+		 target="_blank" rel="noopener" class="share-btn twitter">
 		{{ 'twitter'|svgicon }}
 		<span class="visually-hidden">{{ __( 'Share on', 'planet4-master-theme' ) }} Twitter</span>
 	</a>
 	<!-- Email -->
 	<a href="mailto:?subject=Listen to this, from Greenpeace Africa!&body=Listen to this, from Greenpeace Africa! %0D%0D{% if social.description %}{{ social.description|striptags|url_encode }} {% endif %}{{ (socialLink ~ '&utm_source=email')|url_encode }}%0D%0D"
 		 onclick="dataLayer.push({'event' : 'uaevent', 'eventCategory' : 'Social Share', 'eventAction': 'Email', 'eventLabel': '{{ social.link }}'});"
-		 target="_blank" class="share-btn email">
+		 target="_blank" rel="noopener" class="share-btn email">
 		{{ 'envelope'|svgicon }}
 		<span class="visually-hidden">{{ __( 'Share via', 'planet4-master-theme' ) }} Email</span>
 	</a>
