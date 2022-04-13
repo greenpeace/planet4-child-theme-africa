@@ -27,9 +27,7 @@ add_shortcode('gp_sounds_category', 'wpb_get_category');
 
 /** function get_tags **/
 function wpb_get_tags(){
-	if ( null === $before ) {
-		$before = __( '' );
-	}
+	$before = __( '' );
 	
 	$sep = ', ';
 	$after = '';
