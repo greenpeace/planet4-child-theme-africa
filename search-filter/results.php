@@ -1,14 +1,7 @@
 <div class="allSearchResults">
 <?php
 /**
- * Search & Filter Pro
- *
  * Sample Results Template
- *
- * @package   Search_Filter
- * @author    Ross Morsali
- * @link      https://searchandfilter.com
- * @copyright 2018 Search & Filter
  *
  * Note: these templates are not full page templates, rather
  * just an encaspulation of the your results loop which should
