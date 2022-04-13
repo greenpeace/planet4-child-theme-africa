@@ -34,7 +34,7 @@ if ( $query->have_posts() )
             color: white !important;
             font-size: 20px;
             height: 70px;
-            font-family: Roboto;
+            font-family: 'Roboto', sans-serif;
         }
 
         button.show-more-button.show-more-button-contracted::after {
