@@ -747,3 +747,7 @@ Text Domain: planet4-child-theme-africa
 .single-audio_post .skewed-overlay {
     display: none;
 }
+
+.single-audio_post .carousel-caption .main-header h2 {
+    color: #fff;
+}
