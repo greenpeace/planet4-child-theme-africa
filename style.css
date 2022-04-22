@@ -60,3 +60,690 @@ Text Domain: planet4-child-theme-africa
 .allSearchResults .share-buttons-loop a::after {
     content: none !important;
 }
+
+/* Single site styling */
+
+.single-audio_post .block-header {
+    margin-bottom: -7px;
+}
+.single-audio_post .wp-block-planet4-blocks-carousel-header {
+    height: 516px;
+}
+.single-audio_post .single-post-meta p {
+    margin-bottom: 5px;
+}
+/* Homepage search and filter styling */
+
+.single-audio_post input::-webkit-calendar-picker-indicator {
+    display: none!important;
+}
+.single-audio_post input:autofill, .single-audio_post input:-webkit-autofill {
+    width: 100%;
+    font-family: 'Roboto';
+    Font-size: 30px!important;
+    appearance: none!important;
+}
+.single-audio_post form#search-filter-form-50846 {
+    width: 100vw;
+    background: #EFEFEF;
+    margin-left: calc((100vw - 100%)/2*-1);
+    padding-top: 20px;
+}
+@media (min-width: 1600px) {}
+.single-audio_post .searchandfilter ul {
+    max-width: 1320px;
+    margin: auto;
+    padding-bottom: 20px;
+    font-family: 'Roboto';
+}
+}
+.single-audio_post li.sf-field-search {
+    width: 100%;
+}
+.single-audio_post .sf-field-search label {
+    width: 100%;
+    font: normal normal normal 20px/26px Roboto;
+}
+.single-audio_post input[type="submit"] {
+    display: none;
+}
+.single-audio_post input.sf-input-text {
+    background-image: url('https://www.greenpeace.org/static/planet4-africa-stateless-develop/2022/04/42f38720-search.png')!important;
+    background-position: right!important;
+    background-position-x: calc(100% - 20px)!important;
+    height: 66px!important;
+    margin-right: 15px!important;
+}
+.single-audio_post ol, .single-audio_post ul {
+    padding-left: 0;
+}
+.single-audio_post button.show-more-button {
+    background-color: #F36D3A !important;
+    opacity: 0.8;
+    color: white !important;
+    font-size: 20px;
+    height: 66px!important;
+    width: 130px;
+    margin-left: 15px;
+    font-family: Roboto;
+    box-shadow: 0px 3px 6px #00000029!important;
+    border: none;
+}
+.single-audio_post input.sf-input-text {
+    width: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #356077;
+    padding: 20px;
+}
+.single-audio_post select.sf-input-select {
+    font: normal normal normal 20px/26px Roboto;
+    letter-spacing: 0px;
+    color: #020202;
+    padding: 12px 20px;
+}
+.single-audio_post .searchandfilter ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 0;
+    margin: 0;
+    max-width: 100%;
+}
+.single-audio_post li.sf-field-reset {
+    margin: -20px 0!important;
+    padding: 0!important;
+}
+.single-audio_post select.sf-input-select {
+    color: rgba(2, 2, 2, 0.6)!important;
+}
+.single-audio_post li.sf-field-search {
+    width: 100%;
+}
+.single-audio_post li.sf-field-sort_order, .single-audio_post li.sf-field-category {
+    width: 50%!important;
+}
+.single-audio_post li.sf-field-sort_order, .single-audio_post li.sf-field-category {
+    width: calc(50% - 25px)!important;
+}
+.single-audio_post li.sf-field-sort_order {
+    margin-right: 25px!important;
+}
+.single-audio_post li.sf-field-category {
+    margin-left: 25px!important;
+}
+.single-audio_post select, .single-audio_post .sf-field-tag ul {
+    border: solid 1px #356077!important;
+}
+.single-audio_post li.sf-field-sort_order label, .single-audio_post li.sf-field-category label {
+    width: 100%;
+}
+.single-audio_post select.sf-input-select {
+    font: normal normal normal 20px/26px Roboto;
+    letter-spacing: 0px;
+    color: #020202;
+    padding: 12px 20px;
+    width: 100%;
+}
+.single-audio_post .sf-field-tag ul {
+    width: 100%;
+    overflow: scroll;
+    white-space: nowrap;
+    height: 40px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    padding: 0px!important;
+}
+.single-audio_post .sf-field-tag h4 {
+    text-align: left;
+    font: normal normal normal 20px/26px Roboto;
+    letter-spacing: 0px;
+    color: #020202;
+}
+.single-audio_post .searchandfilter ul>li>ul:not(.children) {
+    margin-left: 0;
+    display: inline-block;
+    padding-left: 20px;
+    max-width: 100%!important;
+    width: 100%!important;
+}
+.single-audio_post .sf-field-tag ul li {
+    padding: 5px 10px!important;
+    display: inline-flex;
+}
+.single-audio_post .sf-field-tag ul li input {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 3px;
+    height: 20px;
+    width: 20px;
+    margin: 5px 0;
+}
+.single-audio_post label.sf-label-checkbox {
+    margin: auto;
+    margin-left: 5px;
+    text-align: left;
+    font: normal normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #45494C;
+}
+.single-audio_post label.sf-label-checkbox:before {
+    content: '#';
+}
+.single-audio_post li.sf-field-reset {
+    width: 100%;
+    text-align: left;
+    font: normal normal normal 16px/42px Roboto;
+    letter-spacing: 0px;
+    color: #58585A!important;
+    opacity: 0.7;
+}
+.single-audio_post li.sf-field-reset a {
+    text-align: left;
+    font: normal normal normal 16px/42px Roboto;
+    letter-spacing: 0px;
+    color: #58585A!important;
+    opacity: 0.7;
+}
+/* loop styling */
+
+.single-audio_post .results-number-search {
+    display: none;
+}
+.single-audio_post h2.audio-loop-title, .single-audio_post h2.audio-loop-title a {
+    text-align: left;
+    font: normal normal bold 26px/34px Roboto;
+    letter-spacing: 0px;
+    color: #000000;
+}
+.single-audio_post .each_related_post .audio-loop-title h2, .single-audio_post .each_related_post .audio-loop-title a {
+    font: normal normal bold 23px/30px Roboto!important;
+}
+.single-audio_post .related_posts_block {
+    padding-bottom: 280px;
+}
+.single-audio_post .single-audio_post hr {
+    margin-bottom: -5px!important;
+    margin-top: 40px!important;
+}
+.single-audio_post ul.post-categories {
+    list-style: none;
+    display: inline-flex;
+    padding-left: 0px;
+}
+.single-audio_post .post-categories li a {
+    text-align: left;
+    font: normal normal bold 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #6610F2;
+    text-transform: uppercase;
+    margin-right: 5px;
+}
+.single-audio_post .audio-loop-meta {
+    display: inline-flex;
+}
+.single-audio_post .audio-tags a:before {
+    content: "#"!important;
+}
+.single-audio_post .audio-tags a {
+    text-align: left;
+    font: normal normal normal 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #006DFD;
+}
+.single-audio_post input.sf-input-text::placeholder, .single-audio_post input.sf-input-text {
+    font-family: 'Roboto';
+}
+/* dropdown select arrow custom css */
+
+.single-audio_post select.sf-input-select {
+    appearance: none;
+}
+.single-audio_post .searchandfilter select.sf-input-select {
+    background: url(https://www.greenpeace.org/static/planet4-africa-stateless-develop/2022/04/243478ae-dropdown-icon.png);
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: right;
+    background-position-x: calc(100% - 15px)!important;
+    background-position-y: 22px;
+}
+/*Header and footer styling */
+
+.single-audio_post form#search_form {
+    display: none;
+}
+.single-audio_post .top-navigation .btn-donate {
+    float: right;
+}
+.single-audio_post .top-navigation .donate-nav-item {
+    width: 50%;
+}
+.single-audio_post .pagination {
+    display: none;
+}
+.single-audio_post .main-page-single-result {
+    display: inline-block;
+    width: 100%;
+}
+/* single post styling */
+
+.single-audio_post .author-date, .single-audio_post address {
+    display: flex;
+    font-style: italic;
+    margin-bottom: -12px;
+    font-family: 'Roboto';
+    text-transform: capitalize;
+    text-align: left;
+    font: italic normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #45494C;
+    opacity: 1;
+}
+.single-audio_post article.post-details.clearfix p, .single-audio_post .each_related_post p {
+    text-align: left;
+    font: normal normal normal 18px/28px Lora;
+    letter-spacing: 0px;
+    color: #020202;
+    opacity: 1;
+}
+.single-audio_post address.single-post-author {
+    text-transform: capitalize;
+}
+.single-audio_post .cat-item span span {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Roboto';
+}
+.single-audio_post .related_posts_block h3, .single-audio_post .rpbt_shortcode h3 {
+    display: none;
+}
+.single-audio_post .each_related_post {
+    background: #E6EBF0 0% 0% no-repeat padding-box;
+    box-shadow: 6px 6px 12px #00000029;
+    border-radius: 5px;
+    opacity: 1;
+    padding: 20px 28px 20px 30px;
+    margin-bottom: 40px;
+}
+.single-audio_post h2.related_podcasts_title {
+    font-size: 40px;
+}
+.single-audio_post p.divider {
+    margin: -3px 5px;
+}
+.single-audio_post span {
+    font-family: 'Roboto';
+}
+.single-audio_post p, .single-audio_post body {
+    font-family: 'Lora';
+    text-align: left;
+    font: normal normal normal 18px/28px Lora;
+    letter-spacing: 0px;
+    color: #020202;
+    opacity: 1;
+}
+.single-audio_post .cats-tags {
+    display: inline-flex;
+}
+.single-audio_post h1 {
+    font-size: 40px;
+}
+.single-audio_post .mejs-container {
+    width: 100%!important;
+}
+.single-audio_post .share-buttons {
+    float: right;
+    margin-top: -5px;
+    margin-bottom: 0px;
+}
+.single-audio_post .share-buttons-loop img {
+    vertical-align: sub;
+}
+.single-audio_post .share-buttons a {
+    box-shadow: 0px 3px 6px #00000029!important;
+}
+.single-audio_post a.cat-item.cat:not(:last-child):after {
+    content: ",";
+}
+.single-audio_post .post-categories li:not(:last-child):after, .single-audio_post a.cat-item.cat:not(:last-child):after {
+    content: ",";
+    margin: 0 5px 0 -5px;
+}
+.single-audio_post .post-content {
+    max-width: 100%!important;
+}
+.single-audio_post .wp-audio-shortcode {
+    width: 100%;
+}
+/* mobile optimisation */
+
+@media (min-width: 992px), @media (min-width: 1200px), @media (min-width:768px), @media (min-width:1400px) {
+    .single-audio_post .container, .single-audio_post .searchandfilter ul, .single-audio_post .sf-field-search label {
+        max-width: 60vw!important;
+        padding-left: 12px;
+        padding-right: 12px;
+        margin: auto!important;
+    }
+    .single-audio_post .page-header .container>:not(.row) {
+        max-width: 100%;
+    }
+}
+@media (min-width: 1600px) {
+    .single-audio_post .container, .single-audio_post .container-lg, .single-audio_post .container-md, .single-audio_post .container-sm, .single-audio_post .container-xl, .single-audio_post .container-xxl, .single-audio_post .searchandfilter ul, .single-audio_post .sf-field-search label {
+        max-width: 60vw!important;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+@media (min-width: 100px) and (max-width: 922px), @media (min-width: 320px) and (max-width: 922px), @media (min-width: 576px) and (max-width: 922px), @media (min-width: 768px) and (max-width: 922px) {
+    .single-audio_post .container, .single-audio_post .container-sm, .single-audio_post .searchandfilter ul, .single-audio_post .carousel-header .carousel-item .carousel-caption .main-header, .single-audio_post .container, .single-audio_post .container-fluid, .single-audio_post .container-lg, .single-audio_post .container-md, .single-audio_post .container-sm, .single-audio_post .container-xl, .single-audio_post .container-xxl, .single-audio_post .sf-field-search label {
+        max-width: 90vw!important;
+        width: 90vw!important;
+    }
+    .single-audio_post button.btn.btn-navbar-toggle.navbar-dropdown-toggle {
+        margin-left: 5vw;
+        padding-left: 0;
+    }
+    .single-audio_post button.navbar-search-toggle {
+        display: none;
+    }
+}
+.single-audio_post div.search-filter-results {
+    margin-top: 30px;
+    padding-bottom: 300px;
+}
+.single-audio_post hr {
+    margin: 20px 0;
+}
+.single-audio_post h2 {
+    margin-bottom: 5px;
+}
+.single-audio_post .audio-loop-meta ul p, .single-audio_post .audio-loop-meta ul li p, .single-audio_post .audio-loop-meta p, .single-audio_post .audio-loop-meta ul {
+    margin-bottom: 10px!important;
+}
+.single-audio_post .main-page-single-result {
+    margin-top: 10px;
+}
+.single-audio_post .cat-item span span, .single-audio_post .cat-item span span:visited {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Roboto';
+    text-align: left;
+    font: normal normal bold 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #6610F2;
+    text-transform: uppercase;
+    margin-right: 5px;
+}
+.single-audio_post .tag-item span span, .single-audio_post .tag-item span span:visited, .single-audio_post .tag-item span, .single-audio_post .tag-item span span:visited {
+    color: #006dfd!important;
+}
+.single-audio_post button.show-more-button.show-more-button-contracted::after {
+    content: url(https://www.greenpeace.org/static/planet4-africa-stateless-develop/2022/04/a78d26d1-arrow-down.png)!important;
+    padding-left: 10px;
+}
+.single-audio_post button.show-more-button.show-more-button-expanded:after {
+    content: url(https://www.greenpeace.org/static/planet4-africa-stateless-develop/2022/04/dde933b3-arrow-up.png)!important;
+    padding-left: 10px;
+}
+.single-audio_post button.show-more-button.show-more-button-expanded, .single-audio_post button.show-more-button:hover {
+    opacity: 100!important;
+}
+.single-audio_post a.btn.btn-donate {
+    color: #000!important;
+}
+/* mobile */
+
+@media (max-width:585px) {
+    .single-audio_post li.sf-field-sort_order, .single-audio_post li.sf-field-category {
+        width: 100%!important;
+    }
+    .single-audio_post li.sf-field-sort_order {
+        margin-right: 0px!important;
+    }
+    .single-audio_post li.sf-field-category {
+        margin-left: 0px!important;
+    }
+    .single-audio_post button.show-more-button.show-more-button-contracted::after {
+        content: url(https://www.greenpeace.org/static/planet4-africa-stateless-develop/2022/04/f05493ee-caret-down-8x4px.png)!important;
+        padding-left: 10px;
+        display: inline-flex;
+        height: 31px;
+        vertical-align: middle;
+    }
+    .single-audio_post button.show-more-button.show-more-button-expanded:after {
+        content: url(https://www.greenpeace.org/static/planet4-africa-stateless-develop/2022/04/bd3f8ba0-caret-up-8x4px.png)!important;
+        padding-left: 10px;
+        display: inline-flex;
+        height: 31px;
+        vertical-align: middle;
+    }
+    .single-audio_post .searchandfilter select.sf-input-select {
+        background: url(https://www.greenpeace.org/static/planet4-africa-stateless-develop/2022/04/33bce915-dropdown-icon-8x5px.png);
+        background-repeat: no-repeat;
+        background-color: white;
+        background-position: right;
+        background-position-x: calc(100% - 10px)!important;
+        height: 30px;
+        padding: 4px 10px;
+    }
+    .single-audio_post .sf-field-tag h4 {
+        text-align: left;
+        font: normal normal normal 15px/20px Roboto;
+        letter-spacing: 0px;
+        color: #020202;
+    }
+    .single-audio_post input.sf-input-text {
+        padding: 10px;
+        margin-right: 5px!important;
+    }
+    .single-audio_post select.sf-input-select {
+        font: normal normal normal 14px/20px Roboto;
+    }
+    .single-audio_post p#meta-dot {
+        display: none;
+    }
+    .single-audio_post .audio-loop-meta, .single-audio_post .cats-tags {
+        display: inline-block;
+    }
+    .single-audio_post ul.post-categories, .single-audio_post ul.audio-tags {
+        margin-bottom: 0!important;
+    }
+    .single-audio_post .share-buttons {
+        float: left;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .single-audio_post .share-buttons svg, .single-audio_post .share-buttons img {
+        vertical-align: baseline;
+        max-height: 20px!important;
+    }
+    .single-audio_post .single-audio_post hr {
+        margin-bottom: 0px!important;
+        margin-top: 20px!important;
+    }
+    .single-audio_post h2.related_podcasts_title {
+        font-size: 31px;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+    .single-audio_post .related_posts_block {
+        padding-bottom: 40px;
+    }
+    .single-audio_post .share-buttons .share-btn {
+        border: none;
+        color: #fff;
+        font-size: 1.25rem;
+        opacity: .9;
+        width: 3rem;
+        text-align: center;
+        line-height: 2.7rem;
+        height: 2.1rem;
+        border-radius: 4px;
+        margin-bottom: 0;
+    }
+    .single-audio_post .share-buttons-loop img {
+        filter: invert();
+        max-height: 20px !important;
+        vertical-align: baseline;
+    }
+    .single-audio_post h1.page-header-title {
+        font-size: 31px;
+    }
+    .single-audio_post input.sf-input-text {
+        background-image: url(https://www.greenpeace.org/static/planet4-africa-stateless-develop/2022/04/42f38720-search.png)!important;
+        background-position: right!important;
+        background-position-x: calc(100% - 10px)!important;
+        background-size: 20px!important;
+        height: 40px!important;
+        margin-right: 15px!important;
+    }
+    .single-audio_post button.show-more-button {
+        height: 40px!important;
+        font-size: 16px!important;
+        width: 100px!important;
+        margin-left: 5px!important;
+    }
+}
+@media (max-width: 424px) {
+    .single-audio_post button.show-more-button.show-more-button-contracted::after {
+        padding-left: 5px!important;
+    }
+}
+@media (max-width:992px) {
+    .single-audio_post .navbar-dropdown {
+        width: 100%!important;
+    }
+    .single-audio_post .navbar-dropdown .country-dropdown-toggle {
+        padding: 0px 70px 0 50px;
+    }
+    .single-audio_post .navbar-dropdown .country-dropdown-toggle:before {
+        border: none;
+    }
+    .single-audio_post .top-navigation .btn-donate {
+        float: left;
+        margin-left: 50px;
+    }
+    .single-audio_post body.logged-in #theme-editor-root {
+        visibility: hidden;
+    }
+    .single-audio_post .navbar-dropdown:before {
+        background: none;
+    }
+    .single-audio_post a.btn.btn-donate {
+        color: #000!important;
+    }
+    .single-audio_post .share-buttons {
+        float: left;
+    }
+    .single-audio_post .carousel-header .carousel-item .background-holder {
+        height: 30vh;
+    }
+    .single-audio_post .carousel-header .carousel-item .carousel-caption {
+        display: block;
+        padding: 0;
+        background: none;
+        height: 30vh;
+        position: absolute;
+        text-align: left;
+        top: 12vh;
+        left: 0;
+        width: 100%;
+    }
+    .single-audio_post .wp-block-planet4-blocks-carousel-header {
+        height: 30vh;
+    }
+    .single-audio_post .carousel-header .carousel-item .carousel-caption .main-header h1, .single-audio_post .carousel-header .carousel-item .carousel-caption .main-header p {
+        color: #fff!important;
+    }
+}
+.single-audio_post .audio-tags>a:before {
+    content: "#"!important;
+}
+/*custom css for autofill*/
+
+.single-audio_post li.sf-field-search {
+    z-index: 100;
+}
+.single-audio_post .tt-menu {
+    position: absolute!important;
+    margin-top: 0px!important;
+}
+.single-audio_post li.sf-field-search>label {
+    display: inline-flex!important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding-top: 40px;
+}
+.single-audio_post form#search-filter-form-50846, .single-audio_post div#searchbar-or-filter {
+    width: 100vw;
+    background: #EFEFEF;
+    margin-left: calc((100vw - 100%)/2*-1);
+    padding-top: 20px;
+}
+.single-audio_post li.sf-field-search {
+    margin-top: 0px!important;
+}
+.single-audio_post .sf-field-search label {
+    display: flex;
+    margin: auto;
+    width: 100%;
+    align-items: center;
+}
+.single-audio_post .tt-suggestion.tt-selectable {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #356077;
+    padding: 20px;
+}
+.single-audio_post span.twitter-typeahead {
+    width: 100%;
+    margin-right: 10px;
+}
+.single-audio_post input.sf-input-text.hound.tt-input {
+    padding-right: 60px;
+}
+.single-audio_post .tt-suggestion.tt-selectable {
+    overflow: hidden;
+    padding: 5px 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: inherit;
+}
+.single-audio_post div#searchbar-or-filter {
+    padding-top: 40px;
+}
+@media (max-width: 585px) {
+    .single-audio_post .tt-suggestion.tt-selectable {
+        max-height: 40px;
+        overflow: hidden;
+        padding: 5px 10px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: inherit;
+    }
+}
+/* header caption fix */
+
+@media (max-width: 585px) {
+    .single-audio_post .carousel-header .carousel-item .carousel-caption {
+        display: block;
+        padding: 0;
+        background: none;
+        height: inherit;
+        position: absolute;
+        text-align: left;
+        vertical-align: middle;
+        top: 0;
+        left: 0;
+        width: 100%;
+        margin-top: 110px;
+    }
+    .single-audio_post .carousel-header .carousel-item .background-holder {
+        height: inherit;
+    }
+    .single-audio_post .carousel-item-mask {
+        height: inherit!important;
+    }
+}
+
+.single-audio_post .skewed-overlay {
+    display: none;
+}
