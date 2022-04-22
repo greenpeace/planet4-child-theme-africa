@@ -71,7 +71,7 @@ if ( $query->have_posts() )
         $title = get_the_title();
         $searchSuggestions[] = $title;
         $searchTitles[] = html_entity_decode(the_title('', '', false), ENT_NOQUOTES, 'UTF-8');
-        $permaLink = get_the_permalink() . 'en/sounds/';
+        $permaLink = get_the_permalink();
         $postID = get_the_ID();
         $waText = 'Listen to this, from Greenpeace Africa!%0D%0D ' . urlencode("$permaLink?utm_medium=share&utm_content=$postID&utm_source=whatsapp");
         $fbText = urlencode("$permaLink?utm_medium=share&utm_content=$postID&utm_source=facebook&quote=Listen to this, from Greenpeace Africa!");
