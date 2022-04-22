@@ -68,7 +68,7 @@ function gp_get_the_term_list( $post_id, $taxonomy, $before = '', $sep = '', $af
 		if ( is_wp_error( $link ) ) {
 			return $link;
 		}
-		$tag_link_include = "/?_sft_post_tag=$termslug";
+		$tag_link_include = "/en/sounds/?_sft_post_tag=$termslug";
 		$tag_url = $base_url . $tag_link_include;
 		$links[] = '<a href="' . esc_url( $tag_url ) . '" rel="tag">' . $term->name . '</a>';
 	}
@@ -116,7 +116,7 @@ function gp_get_the_category_list($post_id) {
 	if ( '' === $separator ) {
 		$thelist .= '<ul class="post-categories">';
 		foreach ( $categories as $category ) {
-			$cat_url_include = "/?_sft_category=";
+			$cat_url_include = "/en/sounds/?_sft_category=";
 			$cat_url = $base_url . $cat_url_include . $category->slug;
 			
 			$thelist .= "\n\t<li>";
@@ -143,7 +143,7 @@ function gp_get_the_category_list($post_id) {
 	} else {
 		$i = 0;
 		foreach ( $categories as $category ) {
-			$cat_url_include = "/?_sft_category=";
+			$cat_url_include = "/en/sounds/?_sft_category=";
 			$cat_url = $base_url . $cat_url_include . $category->slug;
 			
 			if ( 0 < $i ) {
