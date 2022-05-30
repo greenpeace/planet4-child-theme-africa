@@ -108,7 +108,7 @@ Text Domain: planet4-child-theme-africa
     display: none;
 }
 .single-audio_post input.sf-input-text {
-    background-image: url('https://www.greenpeace.org/static/planet4-africa-stateless-develop/2022/04/42f38720-search.png')!important;
+    background-image: url('https://www.greenpeace.org/static/planet4-africa-stateless/2022/05/cc88759e-search.png')!important;
     background-position: right!important;
     background-position-x: calc(100% - 20px)!important;
     height: 66px!important;
@@ -298,7 +298,7 @@ Text Domain: planet4-child-theme-africa
     appearance: none;
 }
 .single-audio_post .searchandfilter select.sf-input-select {
-    background: url(https://www.greenpeace.org/static/planet4-africa-stateless-develop/2022/04/243478ae-dropdown-icon.png);
+    background: url(https://www.greenpeace.org/static/planet4-africa-stateless/2022/05/b44c7f7c-dropdown-icon.png);
     background-repeat: no-repeat;
     background-color: white;
     background-position: right;
@@ -477,11 +477,11 @@ Text Domain: planet4-child-theme-africa
     color: #006dfd!important;
 }
 .single-audio_post button.show-more-button.show-more-button-contracted::after {
-    content: url(https://www.greenpeace.org/static/planet4-africa-stateless-develop/2022/04/a78d26d1-arrow-down.png)!important;
+    content: url(https://www.greenpeace.org/static/planet4-africa-stateless/2022/05/e0714ff7-arrow-down.png)!important;
     padding-left: 10px;
 }
 .single-audio_post button.show-more-button.show-more-button-expanded:after {
-    content: url(https://www.greenpeace.org/static/planet4-africa-stateless-develop/2022/04/dde933b3-arrow-up.png)!important;
+    content: url(https://www.greenpeace.org/static/planet4-africa-stateless/2022/05/432e36fb-arrow-up.png)!important;
     padding-left: 10px;
 }
 .single-audio_post button.show-more-button.show-more-button-expanded, .single-audio_post button.show-more-button:hover {
@@ -503,21 +503,21 @@ Text Domain: planet4-child-theme-africa
         margin-left: 0px!important;
     }
     .single-audio_post button.show-more-button.show-more-button-contracted::after {
-        content: url(https://www.greenpeace.org/static/planet4-africa-stateless-develop/2022/04/f05493ee-caret-down-8x4px.png)!important;
+        content: url(https://www.greenpeace.org/static/planet4-africa-stateless/2022/05/e0714ff7-arrow-down.png)!important;
         padding-left: 10px;
         display: inline-flex;
         height: 31px;
         vertical-align: middle;
     }
     .single-audio_post button.show-more-button.show-more-button-expanded:after {
-        content: url(https://www.greenpeace.org/static/planet4-africa-stateless-develop/2022/04/bd3f8ba0-caret-up-8x4px.png)!important;
+        content: url(https://www.greenpeace.org/static/planet4-africa-stateless/2022/05/432e36fb-arrow-up.png)!important;
         padding-left: 10px;
         display: inline-flex;
         height: 31px;
         vertical-align: middle;
     }
     .single-audio_post .searchandfilter select.sf-input-select {
-        background: url(https://www.greenpeace.org/static/planet4-africa-stateless-develop/2022/04/33bce915-dropdown-icon-8x5px.png);
+        background: url(https://www.greenpeace.org/static/planet4-africa-stateless/2022/05/b44c7f7c-dropdown-icon.png);
         background-repeat: no-repeat;
         background-color: white;
         background-position: right;
@@ -589,7 +589,7 @@ Text Domain: planet4-child-theme-africa
         font-size: 31px;
     }
     .single-audio_post input.sf-input-text {
-        background-image: url(https://www.greenpeace.org/static/planet4-africa-stateless-develop/2022/04/42f38720-search.png)!important;
+        background-image: url(https://www.greenpeace.org/static/planet4-africa-stateless/2022/05/cc88759e-search.png)!important;
         background-position: right!important;
         background-position-x: calc(100% - 10px)!important;
         background-size: 20px!important;
