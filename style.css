@@ -102,6 +102,7 @@ Text Domain: planet4-child-theme-africa
     background-image: url('https://www.greenpeace.org/static/planet4-africa-stateless/2022/05/cc88759e-search.png')!important;
     background-position: right!important;
     background-position-x: calc(100% - 20px)!important;
+    background-size: 30px !important;
     height: 66px!important;
     margin-right: 15px!important;
 }
