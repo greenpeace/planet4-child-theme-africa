@@ -13,8 +13,8 @@ Text Domain: planet4-child-theme-africa
 */
 
 /*
-	Display which theme is active right now in bottom right corner
-	See also planet4-child-theme-africa. Feel free to drop or hide display
+    Display which theme is active right now in bottom right corner
+    See also planet4-child-theme-africa. Feel free to drop or hide display
 */
 
 .allSearchResults button.show-more-button {
@@ -26,41 +26,32 @@ Text Domain: planet4-child-theme-africa
     height: 70px;
     font-family: 'Roboto', sans-serif;
 }
-
 .allSearchResults button.show-more-button.show-more-button-contracted::after {
     content: '▼';
     padding-left: 10px;
 }
-
 .allSearchResults button.show-more-button.show-more-button-expanded::after {
     content: '▲';
     padding-left: 10px;
 }
-
-.allSearchResults li.sf-field-search > label {
+.allSearchResults li.sf-field-search>label {
     display: inline-flex !important;
     align-items: center !important;
     justify-content: space-between !important;
 }
-
-
 .allSearchResults .sf-field-tag ul {
     height: unset !important;
 }
-
 .allSearchResults .share-buttons {
     justify-content: end;
 }
-
 .allSearchResults .share-buttons-loop img {
     filter: invert();
     height: 25px !important;
 }
-
 .allSearchResults .share-buttons-loop a::after {
     content: none !important;
 }
-
 /* Single site styling */
 
 .single-audio_post .block-header {
@@ -89,13 +80,13 @@ Text Domain: planet4-child-theme-africa
     margin-left: calc((100vw - 100%)/2*-1);
     padding-top: 20px;
 }
-@media (min-width: 1600px) {}
-.single-audio_post .searchandfilter ul {
-    max-width: 1320px;
-    margin: auto;
-    padding-bottom: 20px;
-    font-family: 'Roboto';
-}
+@media (min-width: 1600px) {
+    .single-audio_post .searchandfilter ul {
+        max-width: 1320px;
+        margin: auto;
+        padding-bottom: 20px;
+        font-family: 'Roboto';
+    }
 }
 .single-audio_post li.sf-field-search {
     width: 100%;
@@ -503,21 +494,21 @@ Text Domain: planet4-child-theme-africa
         margin-left: 0px!important;
     }
     .single-audio_post button.show-more-button.show-more-button-contracted::after {
-        content: url(https://www.greenpeace.org/static/planet4-africa-stateless/2022/05/e0714ff7-arrow-down.png)!important;
+        content: url(https://www.greenpeace.org/static/planet4-africa-stateless/2022/06/dae023b0-caret-down-8x4px.png)!important;
         padding-left: 10px;
         display: inline-flex;
         height: 31px;
         vertical-align: middle;
     }
     .single-audio_post button.show-more-button.show-more-button-expanded:after {
-        content: url(https://www.greenpeace.org/static/planet4-africa-stateless/2022/05/432e36fb-arrow-up.png)!important;
+        content: url(https://www.greenpeace.org/static/planet4-africa-stateless/2022/06/437b25c1-caret-up-8x4px.png)!important;
         padding-left: 10px;
         display: inline-flex;
         height: 31px;
         vertical-align: middle;
     }
     .single-audio_post .searchandfilter select.sf-input-select {
-        background: url(https://www.greenpeace.org/static/planet4-africa-stateless/2022/05/b44c7f7c-dropdown-icon.png);
+        background: url(https://www.greenpeace.org/static/planet4-africa-stateless/2022/06/fa6dea1e-dropdown-icon-8x5px.png);
         background-repeat: no-repeat;
         background-color: white;
         background-position: right;
@@ -743,11 +734,9 @@ Text Domain: planet4-child-theme-africa
         height: inherit!important;
     }
 }
-
 .single-audio_post .skewed-overlay {
     display: none;
 }
-
 .single-audio_post .carousel-caption .main-header h2 {
     color: #fff;
 }

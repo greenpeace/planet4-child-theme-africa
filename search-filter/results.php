@@ -103,28 +103,28 @@ if ( $query->have_posts() )
 	<a href="https://wa.me/?text=$waText"
 		 onclick="dataLayer.push({'event' : 'uaevent', 'eventCategory' : 'Social Share', 'eventAction': 'Whatsapp', 'eventLabel': '$permaLink'});"
 		 target="_blank" class="share-btn whatsapp">
-		<img src="$whatsAppImg"  alt="WhatsApp" >
+		<svg viewBox="0 0 32 32" class="icon"><use xlink:href="/africa/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#whatsapp"></use></svg>
 		<span class="visually-hidden">Share on Whatsapp</span>
 	</a>
 	<!-- Facebook -->
 	<a href="https://www.facebook.com/sharer/sharer.php?u=$fbText"
 		 onclick="dataLayer.push({'event' : 'uaevent', 'eventCategory' : 'Social Share', 'eventAction': 'Facebook', 'eventLabel': '$permaLink'});"
 		 target="_blank" class="share-btn facebook">
-		 <img src="$fbImg"  alt="FaceBook" >
+		 <svg viewBox="0 0 32 32" class="icon"><use xlink:href="/africa/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#facebook-f"></use></svg>
 		<span class="visually-hidden">Share on Facebook</span>
 	</a>
 	<!-- Twitter -->
 	<a href="https://twitter.com/intent/tweet?related=greenpeace&text=$twitterText"
 		 onclick="dataLayer.push({'event' : 'uaevent', 'eventCategory' : 'Social Share', 'eventAction': 'Twitter', 'eventLabel': '{{ social.link }}'});"
 		 target="_blank" class="share-btn twitter">
-		 <img src="$twitterImg"  alt="Twitter" >
+		 <svg viewBox="0 0 32 32" class="icon"><use xlink:href="/africa/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#twitter"></use></svg>
 		<span class="visually-hidden">Share on Twitter</span>
 	</a>
 	<!-- Email -->
 	<a href="mailto:?subject=$mailText"
 		 onclick="dataLayer.push({'event' : 'uaevent', 'eventCategory' : 'Social Share', 'eventAction': 'Email', 'eventLabel': '{{ social.link }}'});"
 		 target="_blank" class="share-btn email">
-		 <img src="$mailImg"  alt="Mail" >
+		 <svg viewBox="0 0 32 32" class="icon"><use xlink:href="/africa/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#envelope"></use></svg>
 		<span class="visually-hidden">Share via Email</span>
 	</a>
 </div>
