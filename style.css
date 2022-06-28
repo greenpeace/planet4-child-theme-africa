@@ -84,7 +84,6 @@ Text Domain: planet4-child-theme-africa
     .single-audio_post .searchandfilter ul {
         max-width: 1320px;
         margin: auto;
-        padding-bottom: 20px;
         font-family: 'Roboto';
     }
 }
@@ -141,7 +140,7 @@ Text Domain: planet4-child-theme-africa
     max-width: 100%;
 }
 .single-audio_post li.sf-field-reset {
-    margin: -20px 0!important;
+    margin: -20px 0 0 0!important;
     padding: 0!important;
 }
 .single-audio_post select.sf-input-select {
@@ -426,10 +425,11 @@ Text Domain: planet4-child-theme-africa
     .single-audio_post .container, .single-audio_post .container-sm, .single-audio_post .searchandfilter ul, .single-audio_post .carousel-header .carousel-item .carousel-caption .main-header, .single-audio_post .container, .single-audio_post .container-fluid, .single-audio_post .container-lg, .single-audio_post .container-md, .single-audio_post .container-sm, .single-audio_post .container-xl, .single-audio_post .container-xxl, .single-audio_post .sf-field-search label {
         max-width: 90vw!important;
         width: 90vw!important;
+        margin: 0 auto;
     }
     .single-audio_post button.btn.btn-navbar-toggle.navbar-dropdown-toggle {
         margin-left: 5vw;
-        padding-left: 0;
+        padding-left: 0 auto;
     }
     .single-audio_post button.navbar-search-toggle {
         display: none;
@@ -475,9 +475,6 @@ Text Domain: planet4-child-theme-africa
 }
 .single-audio_post button.show-more-button.show-more-button-expanded, .single-audio_post button.show-more-button:hover {
     opacity: 100!important;
-}
-.single-audio_post a.btn.btn-donate {
-    color: #000!important;
 }
 /* mobile */
 
@@ -617,9 +614,6 @@ Text Domain: planet4-child-theme-africa
     .single-audio_post .navbar-dropdown:before {
         background: none;
     }
-    .single-audio_post a.btn.btn-donate {
-        color: #000!important;
-    }
     .single-audio_post .share-buttons {
         float: left;
     }
@@ -696,9 +690,6 @@ Text Domain: planet4-child-theme-africa
     white-space: nowrap;
     width: inherit;
 }
-.single-audio_post div#searchbar-or-filter {
-    padding-top: 40px;
-}
 @media (max-width: 585px) {
     .single-audio_post .tt-suggestion.tt-selectable {
         max-height: 40px;
@@ -737,4 +728,46 @@ Text Domain: planet4-child-theme-africa
 }
 .single-audio_post .carousel-caption .main-header h2 {
     color: #fff;
+}
+.single-audio_post .carousel-item .background-holder:after {
+    background: rgba(30, 30, 30, .45);
+}
+.single-audio_post .carousel-item-mask, .single-audio_post .carousel-inner, .single-audio_post .wp-block-planet4-blocks-carousel-header {
+    height: 27vw !important;
+}
+.single-audio_post .carousel-caption .carousel-captions-wrapper {
+    width: 100%;
+    !important;
+}
+.single-audio_post .carousel-caption .main-header {
+    padding-top: 12vw;
+    !important;
+}
+.single-audio_post .carousel-header .carousel-item .carousel-caption {
+    top: 0 !important;
+}
+.single-audio_post .carousel-header .carousel-item .background-holder {
+    height: 27vh !important;
+}
+.single-audio_post .carousel-item .background-holder img {
+    height: auto !important;
+}
+.single-audio_post .carousel-header .carousel-item .carousel-caption {
+    margin-top: 0 !important;
+}
+@media (min-width: 100px) and (max-width: 922px) {
+    .single-audio_post .carousel-caption .main-header {
+        padding-top: 7vw;
+        !important;
+    }
+}
+@media (max-width: 470px) {
+    .single-audio_post .carousel-caption .main-header h2 {
+        font-size: 18px;
+        margin-bottom: 2px;
+    }
+    .single-audio_post .carousel-caption .main-header p {
+        font-size: 14px;
+        line-height: 1.2em;
+    }
 }
