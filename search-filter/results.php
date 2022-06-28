@@ -82,7 +82,7 @@ if ( $query->have_posts() )
 		<div class="main-page-single-result">
 			<h2 class="audio-loop-title"><a href="<?php echo $permaLink; ?>"><?php the_title(); ?></a></h2>
 			<div class="audio-loop-meta">
-				<?php echo do_shortcode('[gp_sounds_category]'); ?>
+				<?php echo do_shortcode("[gp_sounds_category theid='$postID']"); ?>
 				<p id="meta-dot"style="color: #707070; padding: 0 20px;">•</p>
                 <p class="audio-tags">
 					<?php echo do_shortcode('[gp_sounds_tags]'); ?>

@@ -299,9 +299,6 @@ Text Domain: planet4-child-theme-africa
 }
 /*Header and footer styling */
 
-.single-audio_post form#search_form {
-    display: none;
-}
 .single-audio_post .top-navigation .btn-donate {
     float: right;
 }
