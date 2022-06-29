@@ -62,12 +62,6 @@ if ( $query->have_posts() )
 	{
 		$query->the_post();
 
-        // Images
-        $whatsAppImg = $template_url . '/assets/src/images/icons/whatsapp.svg';
-        $fbImg = $template_url . '/assets/src/images/icons/facebook-f.svg';
-        $twitterImg = $template_url . '/assets/src/images/icons/twitter.svg';
-        $mailImg = $template_url . '/assets/src/images/icons/envelope.svg';
-
         $title = get_the_title();
         $searchSuggestions[] = $title;
         $searchTitles[] = html_entity_decode(the_title('', '', false), ENT_NOQUOTES, 'UTF-8');
@@ -95,42 +89,45 @@ if ( $query->have_posts() )
             }
             ?></div>
 			<p><br /><?php the_content(); ?></p>
+			<p><?php echo get_field('audio_post_caption'); ?></p>
 
-            <p><?php
+            <p>
+            	<?php
                 $html = <<<HTML
-<div class="share-buttons share-buttons-loop">
-	<!-- Whatsapp -->
-	<a href="https://wa.me/?text=$waText"
-		 onclick="dataLayer.push({'event' : 'uaevent', 'eventCategory' : 'Social Share', 'eventAction': 'Whatsapp', 'eventLabel': '$permaLink'});"
-		 target="_blank" class="share-btn whatsapp">
-		<svg viewBox="0 0 32 32" class="icon"><use xlink:href="/africa/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#whatsapp"></use></svg>
-		<span class="visually-hidden">Share on Whatsapp</span>
-	</a>
-	<!-- Facebook -->
-	<a href="https://www.facebook.com/sharer/sharer.php?u=$fbText"
-		 onclick="dataLayer.push({'event' : 'uaevent', 'eventCategory' : 'Social Share', 'eventAction': 'Facebook', 'eventLabel': '$permaLink'});"
-		 target="_blank" class="share-btn facebook">
-		 <svg viewBox="0 0 32 32" class="icon"><use xlink:href="/africa/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#facebook-f"></use></svg>
-		<span class="visually-hidden">Share on Facebook</span>
-	</a>
-	<!-- Twitter -->
-	<a href="https://twitter.com/intent/tweet?related=greenpeace&text=$twitterText"
-		 onclick="dataLayer.push({'event' : 'uaevent', 'eventCategory' : 'Social Share', 'eventAction': 'Twitter', 'eventLabel': '{{ social.link }}'});"
-		 target="_blank" class="share-btn twitter">
-		 <svg viewBox="0 0 32 32" class="icon"><use xlink:href="/africa/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#twitter"></use></svg>
-		<span class="visually-hidden">Share on Twitter</span>
-	</a>
-	<!-- Email -->
-	<a href="mailto:?subject=$mailText"
-		 onclick="dataLayer.push({'event' : 'uaevent', 'eventCategory' : 'Social Share', 'eventAction': 'Email', 'eventLabel': '{{ social.link }}'});"
-		 target="_blank" class="share-btn email">
-		 <svg viewBox="0 0 32 32" class="icon"><use xlink:href="/africa/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#envelope"></use></svg>
-		<span class="visually-hidden">Share via Email</span>
-	</a>
-</div>
-HTML;
+				<div class="share-buttons share-buttons-loop">
+					<!-- Whatsapp -->
+					<a href="https://wa.me/?text=$waText"
+						 onclick="dataLayer.push({'event' : 'uaevent', 'eventCategory' : 'Social Share', 'eventAction': 'Whatsapp', 'eventLabel': '$permaLink'});"
+						 target="_blank" class="share-btn whatsapp">
+						<svg viewBox="0 0 32 32" class="icon"><use xlink:href="/africa/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#whatsapp"></use></svg>
+						<span class="visually-hidden">Share on Whatsapp</span>
+					</a>
+					<!-- Facebook -->
+					<a href="https://www.facebook.com/sharer/sharer.php?u=$fbText"
+						 onclick="dataLayer.push({'event' : 'uaevent', 'eventCategory' : 'Social Share', 'eventAction': 'Facebook', 'eventLabel': '$permaLink'});"
+						 target="_blank" class="share-btn facebook">
+						 <svg viewBox="0 0 32 32" class="icon"><use xlink:href="/africa/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#facebook-f"></use></svg>
+						<span class="visually-hidden">Share on Facebook</span>
+					</a>
+					<!-- Twitter -->
+					<a href="https://twitter.com/intent/tweet?related=greenpeace&text=$twitterText"
+						 onclick="dataLayer.push({'event' : 'uaevent', 'eventCategory' : 'Social Share', 'eventAction': 'Twitter', 'eventLabel': '{{ social.link }}'});"
+						 target="_blank" class="share-btn twitter">
+						 <svg viewBox="0 0 32 32" class="icon"><use xlink:href="/africa/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#twitter"></use></svg>
+						<span class="visually-hidden">Share on Twitter</span>
+					</a>
+					<!-- Email -->
+					<a href="mailto:?subject=$mailText"
+						 onclick="dataLayer.push({'event' : 'uaevent', 'eventCategory' : 'Social Share', 'eventAction': 'Email', 'eventLabel': '{{ social.link }}'});"
+						 target="_blank" class="share-btn email">
+						 <svg viewBox="0 0 32 32" class="icon"><use xlink:href="/africa/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#envelope"></use></svg>
+						<span class="visually-hidden">Share via Email</span>
+					</a>
+				</div>
+				HTML;
                 echo $html;
-                ?></p>
+                ?>
+            </p>
 		</div>
 
 		<hr />

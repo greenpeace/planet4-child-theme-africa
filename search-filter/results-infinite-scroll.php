@@ -83,79 +83,81 @@ if ( $query->have_posts() )
 		{
 			$query->the_post();
 
-			// Images
-	        $whatsAppImg = $template_url . '/assets/src/images/icons/whatsapp.svg';
-	        $fbImg = $template_url . '/assets/src/images/icons/facebook-f.svg';
-	        $twitterImg = $template_url . '/assets/src/images/icons/twitter.svg';
-	        $mailImg = $template_url . '/assets/src/images/icons/envelope.svg';
-
 	        $title = get_the_title();
-	        $searchSuggestions[] = $title;
-	        $permaLink = get_the_permalink();
-	        $postID = get_the_ID();
-	        $waText = urlencode("$permaLink&utm_medium=share&utm_content=$postID&utm_source=whatsapp");
-	        $fbText = urlencode("$permaLink&utm_medium=share&utm_content=$postID&utm_source=facebook");
-	        $twitterText = urlencode($permaLink) . ', via @greenpeace&url=' . urlencode("$permaLink&utm_medium=share&utm_content=$postID&utm_source=twitter") ;
-	        $mailText = $title . '&body=' . urlencode("$permaLink?utm_medium=share&utm_content=$postID&utm_source=email");
-
-
+            $searchSuggestions[] = $title;
+            $searchTitles[] = html_entity_decode(the_title('', '', false), ENT_NOQUOTES, 'UTF-8');
+            $permaLink = get_the_permalink();
+            $postID = get_the_ID();
+            $waText = 'Listen to this, from Greenpeace Africa!%0D%0D ' . urlencode("$permaLink?utm_medium=share&utm_content=$postID&utm_source=whatsapp");
+            $fbText = urlencode("$permaLink?utm_medium=share&utm_content=$postID&utm_source=facebook&quote=Listen to this, from Greenpeace Africa!");
+            $twitterText = 'Listen to this from, Greenpeace Africa! ' . 'via @greenpeace&url=' . urlencode("$permaLink?utm_medium=share&utm_content=$postID&utm_source=twitter") ;
+            $mailText = 'Listen to this, from Greenpeace Africa! ' . '&body=' . 'Listen to this, from Greenpeace Africa! %0D%0D' . urlencode("$permaLink?utm_medium=share&utm_content=$postID&utm_source=email%0D%0D");
 			
 			?>
 			<div class='search-filter-result-item'>
 				<h2 class="audio-loop-title"><a href="<?php echo $permaLink; ?>"><?php the_title(); ?></a></h2>
-			<div class="audio-loop-meta"><?php the_category(); ?><p style="color: #006DFD; padding: 0 20px;">•</p>
-                <p class="audio-tags"><?php the_tags(null, ' '); ?></p></div>
-			<div class="author-date"><?php
-            get_the_author();
-            if (get_the_date() != '') {
-                echo ' - ' . get_the_date();
-            }
-            ?></div>
-			<p><br /><?php the_content(); ?></p>
+                <div class="audio-loop-meta">
+                    <?php echo do_shortcode("[gp_sounds_category theid='$postID']"); ?>
+                    <p id="meta-dot"style="color: #707070; padding: 0 20px;">•</p>
+                    <p class="audio-tags">
+                        <?php echo do_shortcode('[gp_sounds_tags]'); ?>
+                    </p>
+                </div>
+                <div class="author-date"><?php
+                the_author();
+                if (get_the_date() != '') {
+                    echo ' - ' . get_the_date();
+                }
+                ?></div>
+                <p><br /><?php the_content(); ?></p>
+                <p><?php echo get_field('audio_post_caption'); ?></p>
 
-            <p><?php
-                $html = <<<HTML
-<div class="share-buttons share-buttons-loop">
-	<!-- Whatsapp -->
-	<a href="https://wa.me/?text=$waText"
-		 onclick="dataLayer.push({'event' : 'uaevent', 'eventCategory' : 'Social Share', 'eventAction': 'Whatsapp', 'eventLabel': '$permaLink'});"
-		 target="_blank" class="share-btn whatsapp">
-		<svg viewBox="0 0 32 32" class="icon"><use xlink:href="/africa/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#whatsapp"></use></svg>
-		<span class="visually-hidden">Share on Whatsapp</span>
-	</a>
-	<!-- Facebook -->
-	<a href="https://www.facebook.com/sharer/sharer.php?u=$fbText"
-		 onclick="dataLayer.push({'event' : 'uaevent', 'eventCategory' : 'Social Share', 'eventAction': 'Facebook', 'eventLabel': '$permaLink'});"
-		 target="_blank" class="share-btn facebook">
-		 <svg viewBox="0 0 32 32" class="icon"><use xlink:href="/africa/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#facebook-f"></use></svg>
-		<span class="visually-hidden">Share on Facebook</span>
-	</a>
-	<!-- Twitter -->
-	<a href="https://twitter.com/intent/tweet?related=greenpeace&text=$twitterText"
-		 onclick="dataLayer.push({'event' : 'uaevent', 'eventCategory' : 'Social Share', 'eventAction': 'Twitter', 'eventLabel': '{{ social.link }}'});"
-		 target="_blank" class="share-btn twitter">
-		 <svg viewBox="0 0 32 32" class="icon"><use xlink:href="/africa/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#twitter"></use></svg>
-		<span class="visually-hidden">Share on Twitter</span>
-	</a>
-	<!-- Email -->
-	<a href="mailto:?subject=$mailText"
-		 onclick="dataLayer.push({'event' : 'uaevent', 'eventCategory' : 'Social Share', 'eventAction': 'Email', 'eventLabel': '{{ social.link }}'});"
-		 target="_blank" class="share-btn email">
-		 <svg viewBox="0 0 32 32" class="icon"><use xlink:href="/africa/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#envelope"></use></svg>
-		<span class="visually-hidden">Share via Email</span>
-	</a>
-</div>
-HTML;
-                echo $html;
-                ?></p>
+                <p>
+                    <?php
+                    $html = <<<HTML
+                    <div class="share-buttons share-buttons-loop">
+                        <!-- Whatsapp -->
+                        <a href="https://wa.me/?text=$waText"
+                             onclick="dataLayer.push({'event' : 'uaevent', 'eventCategory' : 'Social Share', 'eventAction': 'Whatsapp', 'eventLabel': '$permaLink'});"
+                             target="_blank" class="share-btn whatsapp">
+                            <svg viewBox="0 0 32 32" class="icon"><use xlink:href="/africa/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#whatsapp"></use></svg>
+                            <span class="visually-hidden">Share on Whatsapp</span>
+                        </a>
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=$fbText"
+                             onclick="dataLayer.push({'event' : 'uaevent', 'eventCategory' : 'Social Share', 'eventAction': 'Facebook', 'eventLabel': '$permaLink'});"
+                             target="_blank" class="share-btn facebook">
+                             <svg viewBox="0 0 32 32" class="icon"><use xlink:href="/africa/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#facebook-f"></use></svg>
+                            <span class="visually-hidden">Share on Facebook</span>
+                        </a>
+                        <!-- Twitter -->
+                        <a href="https://twitter.com/intent/tweet?related=greenpeace&text=$twitterText"
+                             onclick="dataLayer.push({'event' : 'uaevent', 'eventCategory' : 'Social Share', 'eventAction': 'Twitter', 'eventLabel': '{{ social.link }}'});"
+                             target="_blank" class="share-btn twitter">
+                             <svg viewBox="0 0 32 32" class="icon"><use xlink:href="/africa/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#twitter"></use></svg>
+                            <span class="visually-hidden">Share on Twitter</span>
+                        </a>
+                        <!-- Email -->
+                        <a href="mailto:?subject=$mailText"
+                             onclick="dataLayer.push({'event' : 'uaevent', 'eventCategory' : 'Social Share', 'eventAction': 'Email', 'eventLabel': '{{ social.link }}'});"
+                             target="_blank" class="share-btn email">
+                             <svg viewBox="0 0 32 32" class="icon"><use xlink:href="/africa/wp-content/themes/planet4-master-theme/assets/build/sprite.symbol.svg#envelope"></use></svg>
+                            <span class="visually-hidden">Share via Email</span>
+                        </a>
+                    </div>
+                    HTML;
+                    echo $html;
+                    ?>
+                </p>
+    		</div>
+
+    		<hr />
 		</div>
-
-		<hr />
-			</div>
 			
 			<?php
 		}
 	    $searchSuggestions = base64_encode(json_encode($searchSuggestions));
+        $searchTitles = base64_encode(json_encode($audio));
 	?>
 	</div>
 <?php
