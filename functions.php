@@ -523,7 +523,7 @@ function gp_get_post_link( $post = null, $args = array() ) {
 	return apply_filters( 'related_posts_by_taxonomy_post_link', $link, $post, $link_attr, $args );
 }
 
-function gp_construct_card($class = '', $title = '', $cats = '', $tags = '', $author = '', $date = '', $content = ''){
+function gp_construct_card($class = '', $title = '', $cats = '', $tags = '', $author = '', $date = '', $content = '', $caption = ''){
 	return <<<HTML
 			<div class="each_related_post">
 			<div $class>
@@ -536,6 +536,7 @@ function gp_construct_card($class = '', $title = '', $cats = '', $tags = '', $au
 				</div>
 				<div class="author-date"> $author  $date</div>
 				<p><br />$content</p>
+				<p>$caption</p>
 			</div>
 		</div>
 HTML;
@@ -575,8 +576,9 @@ function gp_related_posts() {
 			$content = apply_filters( 'the_content', $newPost->post_content );
 			$title = gp_get_post_link($newPost, args);
 			$class = gp_get_post_classes($newPost, args);
+			$caption = get_field('audio_post_caption', $custom_post_id);
 
-			$data .= gp_construct_card($class, $title, $cats, $tags, $author, $date, $content);
+			$data .= gp_construct_card($class, $title, $cats, $tags, $author, $date, $content, $caption);
 		}
 	}
 
@@ -621,6 +623,8 @@ function gp_related_posts() {
 
 				$addedPosts[] = $post->ID;
 
+				$postID = $post->ID;
+
 				$author = get_the_author_meta('display_name');
 
 				$date = '';
@@ -628,13 +632,14 @@ function gp_related_posts() {
 					$date =  ' - ' . get_the_date();
 				}
 
-					$cats = do_shortcode('[gp_sounds_category]');
-					$tags = do_shortcode('[gp_sounds_tags]');
+					$cats = do_shortcode("[gp_sounds_category theid='$postID']");
+					$tags = do_shortcode("[gp_sounds_tags theid='$postID']");
 					$content = apply_filters( 'the_content', $post->post_content );
 					$title = gp_get_post_link($post, args);
 					$class = gp_get_post_classes($post, args);
+					$caption = get_field('audio_post_caption', $post->ID);
 
-				$data .= gp_construct_card($class, $title, $cats, $tags, $author, $date, $content);
+				$data .= gp_construct_card($class, $title, $cats, $tags, $author, $date, $content, $caption);
 				}
 
 		endwhile;
