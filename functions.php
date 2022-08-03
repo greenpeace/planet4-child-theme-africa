@@ -542,10 +542,7 @@ function gp_construct_card($class = '', $title = '', $cats = '', $tags = '', $au
 HTML;
 }
 
-// function that runs when shortcode is called
 function gp_related_posts() {
-
-// Things that you want to do.
 
 	global $post;
 
@@ -574,8 +571,8 @@ function gp_related_posts() {
 			$cats = do_shortcode("[gp_sounds_category theid='$custom_post_id']");
 			$tags = do_shortcode("[gp_sounds_tags theid='$custom_post_id']");
 			$content = apply_filters( 'the_content', $newPost->post_content );
-			$title = gp_get_post_link($newPost, args);
-			$class = gp_get_post_classes($newPost, args);
+			$title = gp_get_post_link($newPost);
+			$class = gp_get_post_classes($newPost);
 			$caption = get_field('audio_post_caption', $custom_post_id);
 
 			$data .= gp_construct_card($class, $title, $cats, $tags, $author, $date, $content, $caption);
