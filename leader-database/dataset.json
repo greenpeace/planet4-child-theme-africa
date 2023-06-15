@@ -1,0 +1,442 @@
+[
+    {
+        "name": "Angola",
+        "id": "ao",
+        "country_name_french": "Angola",
+        "leader_name": "João Lourenço",
+        "leader_twitter_account": "@jlprdeangola",
+        "official_twitter_account": null
+    },
+    {
+        "name": "Burkina Faso",
+        "id": "bf",
+        "country_name_french": "Burkina Faso",
+        "leader_name": "Ibrahim Traoré",
+        "leader_twitter_account": "#IbrahimTraoré",
+        "official_twitter_account": "@sigbf"
+    },
+    {
+        "name": "Burundi",
+        "id": "bi",
+        "country_name_french": "Burundi",
+        "leader_name": "Évariste Ndayishimiye",
+        "leader_twitter_account": "@GeneralNeva",
+        "official_twitter_account": "@BurundiGov"
+    },
+    {
+        "name": "Benin",
+        "id": "bj",
+        "country_name_french": "Bénin",
+        "leader_name": "Patrice Talon",
+        "leader_twitter_account": "@PatriceTalonPR",
+        "official_twitter_account": null
+    },
+    {
+        "name": "Botswana",
+        "id": "bw",
+        "country_name_french": "Botswana",
+        "leader_name": "Mokgweetsi Masisi",
+        "leader_twitter_account": "@OfficialMasisi",
+        "official_twitter_account": "@BWGovernment"
+    },
+    {
+        "name": "Democratic Republic of the Congo",
+        "id": "cd",
+        "country_name_french": "République démocratique du Congo",
+        "leader_name": "Félix Tshisekedi",
+        "leader_twitter_account": "@Presidence_RDC",
+        "official_twitter_account": null
+    },
+    {
+        "name": "Central African Republic",
+        "id": "cf",
+        "country_name_french": "République centrafricaine",
+        "leader_name": "Faustin-Archange Touadéra",
+        "leader_twitter_account": "@FA_Touadera",
+        "official_twitter_account": null
+    },
+    {
+        "name": "Republic of the Congo",
+        "id": "cg",
+        "country_name_french": "République du Congo",
+        "leader_name": "Denis Sassou Nguesso",
+        "leader_twitter_account": "@SassouCG",
+        "official_twitter_account": null
+    },
+    {
+        "name": "Ivory Coast",
+        "id": "ci",
+        "country_name_french": "Côte d'Ivoire",
+        "leader_name": "Alassane Ouattara",
+        "leader_twitter_account": "@AOuattara_PRCI",
+        "official_twitter_account": "@Gouvci"
+    },
+    {
+        "name": "Cameroon",
+        "id": "cm",
+        "country_name_french": "Cameroun",
+        "leader_name": "Paul Biya",
+        "leader_twitter_account": "@PR_Paul_BIYA",
+        "official_twitter_account": "@CameroonPm237"
+    },
+    {
+        "name": "Cape Verde",
+        "id": "cv",
+        "country_name_french": "Cap-Vert",
+        "leader_name": "José Maria Neves",
+        "leader_twitter_account": "@PresidenciaCV",
+        "official_twitter_account": "@PresidenciaCV"
+    },
+    {
+        "name": "Djibouti",
+        "id": "dj",
+        "country_name_french": "Djibouti",
+        "leader_name": "Ismaïl Omar Guelleh",
+        "leader_twitter_account": "@IsmailOguelleh",
+        "official_twitter_account": null
+    },
+    {
+        "name": "Algeria",
+        "id": "dz",
+        "country_name_french": "Algérie",
+        "leader_name": "Abdelmadjid Tebboune",
+        "leader_twitter_account": "@TebbouneAmadjid",
+        "official_twitter_account": null
+    },
+    {
+        "name": "Egypt",
+        "id": "eg",
+        "country_name_french": "Egypte",
+        "leader_name": "Abdel Fattah el-Sisi",
+        "leader_twitter_account": "@AlsisiOfficial",
+        "official_twitter_account": null
+    },
+    {
+        "name": "Sahrawi Arab Democratic Republic",
+        "id": "eh",
+        "country_name_french": "République arabe sahraouie démocratique",
+        "leader_name": "Brahim Ghali",
+        "leader_twitter_account": "#BrahimGhali",
+        "official_twitter_account": null
+    },
+    {
+        "name": "Eritrea",
+        "id": "er",
+        "country_name_french": "Érythrée",
+        "leader_name": "Isaias Afwerki",
+        "leader_twitter_account": "@AfeworkiIsayas",
+        "official_twitter_account": null
+    },
+    {
+        "name": "Ethiopia",
+        "id": "et",
+        "country_name_french": "Éthiopie",
+        "leader_name": "Abiy Ahmed Ali",
+        "leader_twitter_account": "@AbiyAhmedAli",
+        "official_twitter_account": "@PMEthiopia"
+    },
+    {
+        "name": "Gabon",
+        "id": "ga",
+        "country_name_french": "Gabon",
+        "leader_name": "Ali Bongo Ondimba",
+        "leader_twitter_account": "@PresidentABO",
+        "official_twitter_account": "@GouvGabon"
+    },
+    {
+        "name": "Ghana",
+        "id": "gh",
+        "country_name_french": "Ghana",
+        "leader_name": "Nana Akufo-Addo",
+        "leader_twitter_account": "@NAkufoAddo",
+        "official_twitter_account": "@ghanagov"
+    },
+    {
+        "name": "Gambia",
+        "id": "gm",
+        "country_name_french": "Gambie",
+        "leader_name": "Adama Barrow",
+        "leader_twitter_account": "@BarrowPresident",
+        "official_twitter_account": "@Presidency_GMB"
+    },
+    {
+        "name": "Guinea",
+        "id": "gn",
+        "country_name_french": "Guinée",
+        "leader_name": "Mamady Doumbouya",
+        "leader_twitter_account": "@Presidence_gn",
+        "official_twitter_account": null
+    },
+    {
+        "name": "Equatorial Guinea",
+        "id": "gq",
+        "country_name_french": "Guinée équatoriale",
+        "leader_name": "Teodoro Obiang Nguema Mbasogo",
+        "leader_twitter_account": "@ObiangMbasogo",
+        "official_twitter_account": null
+    },
+    {
+        "name": "Guinea-Bissau",
+        "id": "gw",
+        "country_name_french": "Guinée-Bissau",
+        "leader_name": "Umaro Sissoco Embaló",
+        "leader_twitter_account": "@USEmbalo",
+        "official_twitter_account": null
+    },
+    {
+        "name": "Kenya",
+        "id": "ke",
+        "country_name_french": "Kenya",
+        "leader_name": "William Ruto",
+        "leader_twitter_account": "@WilliamsRuto",
+        "official_twitter_account": "@StateHouseKenya"
+    },
+    {
+        "name": "Comoros",
+        "id": "km",
+        "country_name_french": "Comores",
+        "leader_name": "Azali Assoumani",
+        "leader_twitter_account": "@Azali_officiel",
+        "official_twitter_account": null
+    },
+    {
+        "name": "Liberia",
+        "id": "lr",
+        "country_name_french": "Liberia",
+        "leader_name": "George Weah",
+        "leader_twitter_account": "@GeorgeWeahOff",
+        "official_twitter_account": null
+    },
+    {
+        "name": "Lesotho",
+        "id": "ls",
+        "country_name_french": "Lesotho",
+        "leader_name": "Sam Matekane",
+        "leader_twitter_account": "@MatekaneSam",
+        "official_twitter_account": null
+    },
+    {
+        "name": "Libya",
+        "id": "ly",
+        "country_name_french": "Libye",
+        "leader_name": "Mohamed al-Menfi",
+        "leader_twitter_account": "#MohamedAlMenfi",
+        "official_twitter_account": null
+    },
+    {
+        "name": "Morocco",
+        "id": "ma",
+        "country_name_french": "Maroc",
+        "leader_name": "Aziz Akhannouch",
+        "leader_twitter_account": "#AzizAkhannouch",
+        "official_twitter_account": null
+    },
+    {
+        "name": "Madagascar",
+        "id": "mg",
+        "country_name_french": "Madagascar",
+        "leader_name": "Andry Rajoelina",
+        "leader_twitter_account": "@SE_Rajoelina",
+        "official_twitter_account": "@PresidenceMada"
+    },
+    {
+        "name": "Mali",
+        "id": "ml",
+        "country_name_french": "Mali",
+        "leader_name": "Assimi Goïta",
+        "leader_twitter_account": "@GoitaAssimi",
+        "official_twitter_account": "@PresidenceMali"
+    },
+    {
+        "name": "Mauritania",
+        "id": "mr",
+        "country_name_french": "Mauritanie",
+        "leader_name": "Mohamed Ould Ghazouani",
+        "leader_twitter_account": "@MCGhazouani",
+        "official_twitter_account": null
+    },
+    {
+        "name": "Mauritius",
+        "id": "mu",
+        "country_name_french": "Maurice",
+        "leader_name": "Pravind Jugnauth",
+        "leader_twitter_account": "@KumarJugnauth",
+        "official_twitter_account": "@MauritiusPM"
+    },
+    {
+        "name": "Malawi",
+        "id": "mw",
+        "country_name_french": "Malawi",
+        "leader_name": "Lazarus Chakwera",
+        "leader_twitter_account": "@LAZARUSCHAKWERA",
+        "official_twitter_account": "@MalawiGovt"
+    },
+    {
+        "name": "Mozambique",
+        "id": "mz",
+        "country_name_french": "Mozambique",
+        "leader_name": "Filipe Nyusi",
+        "leader_twitter_account": "@filipe_nyusi",
+        "official_twitter_account": null
+    },
+    {
+        "name": "Namibia",
+        "id": "na",
+        "country_name_french": "Namibie",
+        "leader_name": "Hage Geingob",
+        "leader_twitter_account": "@hagegeingob",
+        "official_twitter_account": "@GRN_Namibia"
+    },
+    {
+        "name": "Niger",
+        "id": "ne",
+        "country_name_french": "Niger",
+        "leader_name": "Mohamed Bazoum",
+        "leader_twitter_account": "@mohamedbazoum",
+        "official_twitter_account": "@NigerStateNG"
+    },
+    {
+        "name": "Nigeria",
+        "id": "ng",
+        "country_name_french": "Nigeria",
+        "leader_name": "Bola Ahmed Tinubu",
+        "leader_twitter_account": "@officialABAT",
+        "official_twitter_account": "@NigeriaGov"
+    },
+    {
+        "name": "Rwanda",
+        "id": "rw",
+        "country_name_french": "Rwanda",
+        "leader_name": "Paul Kagame",
+        "leader_twitter_account": "@PaulKagame",
+        "official_twitter_account": "@RwandaGov"
+    },
+    {
+        "name": "Sudan",
+        "id": "sd",
+        "country_name_french": "Soudan",
+        "leader_name": "Abdel Fattah al-Burhan",
+        "leader_twitter_account": "@aftaburhan",
+        "official_twitter_account": null
+    },
+    {
+        "name": "Seychelles",
+        "id": "Seychelles",
+        "country_name_french": "Seychelles",
+        "leader_name": "Wavel Ramkalawan",
+        "leader_twitter_account": "@StateHouseSey",
+        "official_twitter_account": "@StateHouseSey"
+    },
+    {
+        "name": "Sierra Leone",
+        "id": "sl",
+        "country_name_french": "Sierra Leone",
+        "leader_name": "Julius Maada Bio",
+        "leader_twitter_account": "@PresidentBio",
+        "official_twitter_account": null
+    },
+    {
+        "name": "Senegal",
+        "id": "sn",
+        "country_name_french": "Sénégal",
+        "leader_name": "Macky Sall",
+        "leader_twitter_account": "@Macky_Sall",
+        "official_twitter_account": "@PR_Senegal"
+    },
+    {
+        "name": "Somalia",
+        "id": "so",
+        "country_name_french": "Somalie",
+        "leader_name": "Hassan Sheikh Mohamud",
+        "leader_twitter_account": "@HassanSMohamud",
+        "official_twitter_account": "@Somalia"
+    },
+    {
+        "name": "South Sudan",
+        "id": "ss",
+        "country_name_french": "Soudan du Sud",
+        "leader_name": "Salva Kiir Mayardit",
+        "leader_twitter_account": "@StateHouse_J1",
+        "official_twitter_account": "@SouthSudanGov"
+    },
+    {
+        "name": "São Tomé and Príncipe",
+        "id": "st",
+        "country_name_french": "Sao Tomé-et-Principe",
+        "leader_name": "Carlos Vila Nova",
+        "leader_twitter_account": "#CarlosVilaNova",
+        "official_twitter_account": null
+    },
+    {
+        "name": "Eswatini",
+        "id": "sz",
+        "country_name_french": "Eswatini",
+        "leader_name": "Mswati III",
+        "leader_twitter_account": "@EswatiniGovern1",
+        "official_twitter_account": "@EswatiniGovern1"
+    },
+    {
+        "name": "Chad",
+        "id": "td",
+        "country_name_french": "Tchad",
+        "leader_name": "Mahamat Déby",
+        "leader_twitter_account": "@GmahamatIdi",
+        "official_twitter_account": null
+    },
+    {
+        "name": "Togo",
+        "id": "tg",
+        "country_name_french": "Togo",
+        "leader_name": "Faure Gnassingbé",
+        "leader_twitter_account": "@FEGnassingbe",
+        "official_twitter_account": "@GouvTg"
+    },
+    {
+        "name": "Tunisia",
+        "id": "tn",
+        "country_name_french": "Tunisie",
+        "leader_name": "Kais Saied",
+        "leader_twitter_account": "@TnPresidency",
+        "official_twitter_account": "@TnPresidency"
+    },
+    {
+        "name": "Tanzania",
+        "id": "tz",
+        "country_name_french": "Tanzanie",
+        "leader_name": "Samia Suluhu Hassan",
+        "leader_twitter_account": "@SuluhuSamia",
+        "official_twitter_account": "@tanzaniagov"
+    },
+    {
+        "name": "Uganda",
+        "id": "ug",
+        "country_name_french": "Ouganda",
+        "leader_name": "Yoweri Museveni",
+        "leader_twitter_account": "@KagutaMuseveni",
+        "official_twitter_account": "@GovUganda"
+    },
+    {
+        "name": "South Africa",
+        "id": "za",
+        "country_name_french": "Afrique du Sud",
+        "leader_name": "Cyril Ramaphosa",
+        "leader_twitter_account": "@CyrilRamaphosa",
+        "official_twitter_account": "@PresidencyZA"
+    },
+    {
+        "name": "Zambia",
+        "id": "zm",
+        "country_name_french": "Zambie",
+        "leader_name": "Hakainde Hichilema",
+        "leader_twitter_account": "@HHichilema",
+        "official_twitter_account": null
+    },
+    {
+        "name": "Zimbabwe",
+        "id": "zw",
+        "country_name_french": "Zimbabwe",
+        "leader_name": "Emmerson Mnangagwa",
+        "leader_twitter_account": "@edmnangagwa",
+        "official_twitter_account": null
+    }
+]
