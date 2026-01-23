@@ -24,7 +24,6 @@ Text Domain: planet4-child-theme-africa
     color: white !important;
     font-size: 20px;
     height: 70px;
-    font-family: 'Roboto', sans-serif;
 }
 .allSearchResults button.show-more-button.show-more-button-contracted::after {
     content: '▼';
@@ -70,7 +69,6 @@ Text Domain: planet4-child-theme-africa
 }
 .single-audio_post input:autofill, .single-audio_post input:-webkit-autofill {
     width: 100%;
-    font-family: 'Roboto';
     Font-size: 30px!important;
     appearance: none!important;
 }
@@ -84,7 +82,6 @@ Text Domain: planet4-child-theme-africa
     .single-audio_post .searchandfilter ul {
         max-width: 1320px;
         margin: auto;
-        font-family: 'Roboto';
     }
 }
 .single-audio_post li.sf-field-search {
@@ -92,7 +89,11 @@ Text Domain: planet4-child-theme-africa
 }
 .single-audio_post .sf-field-search label {
     width: 100%;
-    font: normal normal normal 20px/26px Roboto;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
 }
 .single-audio_post input[type="submit"] {
     display: none;
@@ -116,7 +117,6 @@ Text Domain: planet4-child-theme-africa
     height: 66px!important;
     width: 130px;
     margin-left: 15px;
-    font-family: Roboto;
     box-shadow: 0px 3px 6px #00000029!important;
     border: none;
 }
@@ -127,7 +127,11 @@ Text Domain: planet4-child-theme-africa
     padding: 20px;
 }
 .single-audio_post select.sf-input-select {
-    font: normal normal normal 20px/26px Roboto;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
     letter-spacing: 0px;
     color: #020202;
     padding: 12px 20px;
@@ -168,7 +172,11 @@ Text Domain: planet4-child-theme-africa
     width: 100%;
 }
 .single-audio_post select.sf-input-select {
-    font: normal normal normal 20px/26px Roboto;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
     letter-spacing: 0px;
     color: #020202;
     padding: 12px 20px;
@@ -185,7 +193,11 @@ Text Domain: planet4-child-theme-africa
 }
 .single-audio_post .sf-field-tag h4 {
     text-align: left;
-    font: normal normal normal 20px/26px Roboto;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
     letter-spacing: 0px;
     color: #020202;
 }
@@ -212,7 +224,11 @@ Text Domain: planet4-child-theme-africa
     margin: auto;
     margin-left: 5px;
     text-align: left;
-    font: normal normal normal 15px/20px Roboto;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
     letter-spacing: 0px;
     color: #45494C;
 }
@@ -222,14 +238,22 @@ Text Domain: planet4-child-theme-africa
 .single-audio_post li.sf-field-reset {
     width: 100%;
     text-align: left;
-    font: normal normal normal 16px/42px Roboto;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 42px;
     letter-spacing: 0px;
     color: #58585A!important;
     opacity: 0.7;
 }
 .single-audio_post li.sf-field-reset a {
     text-align: left;
-    font: normal normal normal 16px/42px Roboto;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 42px;
     letter-spacing: 0px;
     color: #58585A!important;
     opacity: 0.7;
@@ -241,12 +265,20 @@ Text Domain: planet4-child-theme-africa
 }
 .single-audio_post h2.audio-loop-title, .single-audio_post h2.audio-loop-title a {
     text-align: left;
-    font: normal normal bold 26px/34px Roboto;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 34px;
     letter-spacing: 0px;
     color: #000000;
 }
 .single-audio_post .each_related_post .audio-loop-title h2, .single-audio_post .each_related_post .audio-loop-title a {
-    font: normal normal bold 23px/30px Roboto!important;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 30px;
 }
 .single-audio_post .related_posts_block {
     padding-bottom: 280px;
@@ -262,7 +294,11 @@ Text Domain: planet4-child-theme-africa
 }
 .single-audio_post .post-categories li a {
     text-align: left;
-    font: normal normal bold 16px/21px Roboto;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
     letter-spacing: 0px;
     color: #6610F2;
     text-transform: uppercase;
@@ -276,12 +312,13 @@ Text Domain: planet4-child-theme-africa
 }
 .single-audio_post .audio-tags a {
     text-align: left;
-    font: normal normal normal 16px/21px Roboto;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
     letter-spacing: 0px;
     color: #006DFD;
-}
-.single-audio_post input.sf-input-text::placeholder, .single-audio_post input.sf-input-text {
-    font-family: 'Roboto';
 }
 /* dropdown select arrow custom css */
 
@@ -317,17 +354,24 @@ Text Domain: planet4-child-theme-africa
     display: flex;
     font-style: italic;
     margin-bottom: -12px;
-    font-family: 'Roboto';
     text-transform: capitalize;
     text-align: left;
-    font: italic normal normal 15px/20px Roboto;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
     letter-spacing: 0px;
     color: #45494C;
     opacity: 1;
 }
 .single-audio_post article.post-details.clearfix p, .single-audio_post .each_related_post p {
     text-align: left;
-    font: normal normal normal 18px/28px Lora;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
     letter-spacing: 0px;
     color: #020202;
     opacity: 1;
@@ -338,7 +382,6 @@ Text Domain: planet4-child-theme-africa
 .single-audio_post .cat-item span span {
     text-transform: uppercase;
     font-weight: bold;
-    font-family: 'Roboto';
 }
 .single-audio_post .related_posts_block h3, .single-audio_post .rpbt_shortcode h3 {
     display: none;
@@ -357,13 +400,13 @@ Text Domain: planet4-child-theme-africa
 .single-audio_post p.divider {
     margin: -3px 5px;
 }
-.single-audio_post span {
-    font-family: 'Roboto';
-}
 .single-audio_post p, .single-audio_post body {
-    font-family: 'Lora';
     text-align: left;
-    font: normal normal normal 18px/28px Lora;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
     letter-spacing: 0px;
     color: #020202;
     opacity: 1;
@@ -403,9 +446,9 @@ Text Domain: planet4-child-theme-africa
 }
 /* mobile optimisation */
 
-@media (min-width: 992px), @media (min-width: 1200px), @media (min-width:768px), @media (min-width:1400px) {
+@media (min-width: 992px) {
     .single-audio_post .container, .single-audio_post .searchandfilter ul, .single-audio_post .sf-field-search label {
-        max-width: 60vw!important;
+        max-width: 60vw !important;
         padding-left: 12px;
         padding-right: 12px;
         margin: auto!important;
@@ -421,7 +464,7 @@ Text Domain: planet4-child-theme-africa
         padding-right: 12px;
     }
 }
-@media (min-width: 100px) and (max-width: 922px), @media (min-width: 320px) and (max-width: 922px), @media (min-width: 576px) and (max-width: 922px), @media (min-width: 768px) and (max-width: 922px) {
+@media (min-width: 100px) and (max-width: 922px) {
     .single-audio_post .container, .single-audio_post .container-sm, .single-audio_post .searchandfilter ul, .single-audio_post .carousel-header .carousel-item .carousel-caption .main-header, .single-audio_post .container, .single-audio_post .container-fluid, .single-audio_post .container-lg, .single-audio_post .container-md, .single-audio_post .container-sm, .single-audio_post .container-xl, .single-audio_post .container-xxl, .single-audio_post .sf-field-search label {
         max-width: 90vw!important;
         width: 90vw!important;
@@ -453,10 +496,12 @@ Text Domain: planet4-child-theme-africa
 }
 .single-audio_post .cat-item span span, .single-audio_post .cat-item span span:visited {
     text-transform: uppercase;
-    font-weight: bold;
-    font-family: 'Roboto';
     text-align: left;
-    font: normal normal bold 16px/21px Roboto;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
     letter-spacing: 0px;
     color: #6610F2;
     text-transform: uppercase;
@@ -513,7 +558,11 @@ Text Domain: planet4-child-theme-africa
     }
     .single-audio_post .sf-field-tag h4 {
         text-align: left;
-        font: normal normal normal 15px/20px Roboto;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
         letter-spacing: 0px;
         color: #020202;
     }
@@ -522,7 +571,11 @@ Text Domain: planet4-child-theme-africa
         margin-right: 5px!important;
     }
     .single-audio_post select.sf-input-select {
-        font: normal normal normal 14px/20px Roboto;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
     }
     .single-audio_post p#meta-dot {
         display: none;
@@ -710,7 +763,6 @@ Text Domain: planet4-child-theme-africa
         height: inherit;
         position: absolute;
         text-align: left;
-        vertical-align: middle;
         top: 0;
         left: 0;
         width: 100%;
@@ -737,11 +789,9 @@ Text Domain: planet4-child-theme-africa
 }
 .single-audio_post .carousel-caption .carousel-captions-wrapper {
     width: 100%;
-    !important;
 }
 .single-audio_post .carousel-caption .main-header {
     padding-top: 12vw;
-    !important;
 }
 .single-audio_post .carousel-header .carousel-item .carousel-caption {
     top: 0 !important;
@@ -758,7 +808,6 @@ Text Domain: planet4-child-theme-africa
 @media (min-width: 100px) and (max-width: 922px) {
     .single-audio_post .carousel-caption .main-header {
         padding-top: 7vw;
-        !important;
     }
 }
 @media (max-width: 470px) {
