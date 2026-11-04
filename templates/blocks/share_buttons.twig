@@ -1,5 +1,6 @@
 {% set socialLink = social.link ~ '?utm_medium=' ~ utm_medium ~ utm_content_param ~ utm_campaign_param %}
 <div class="share-buttons">
+	<div class="share-buttons-icons">
 	<!-- Whatsapp -->
 	<a href="https://wa.me/?text=Listen to this, from Greenpeace Africa!%0D%0D {{ (socialLink ~ '&utm_source=whatsapp')|url_encode }}"
 		 onclick="dataLayer.push({'event' : 'uaevent', 'eventCategory' : 'Social Share', 'eventAction': 'Whatsapp', 'eventLabel': '{{ social.link }}'});"
@@ -14,12 +15,12 @@
 		{{ 'facebook-f'|svgicon }}
 		<span class="visually-hidden">{{ __( 'Share on', 'planet4-master-theme' ) }} Facebook</span>
 	</a>
-	<!-- Twitter -->
-	<a href="https://twitter.com/intent/tweet?related={{ social_accounts.twitter }}&text=Listen to this, from Greenpeace Africa! via @{{ social_accounts.twitter }}&url={{ (socialLink ~ '&utm_source=twitter')|url_encode }}"
-		 onclick="dataLayer.push({'event' : 'uaevent', 'eventCategory' : 'Social Share', 'eventAction': 'Twitter', 'eventLabel': '{{ social.link }}'});"
-		 target="_blank" rel="noopener" class="share-btn twitter">
-		{{ 'twitter'|svgicon }}
-		<span class="visually-hidden">{{ __( 'Share on', 'planet4-master-theme' ) }} Twitter</span>
+	<!-- LinkedIn -->
+	<a href="https://www.linkedin.com/sharing/share-offsite/?url={{ (socialLink ~ '&utm_source=linkedin')|url_encode }}"
+		 onclick="dataLayer.push({'event' : 'uaevent', 'eventCategory' : 'Social Share', 'eventAction': 'LinkedIn', 'eventLabel': '{{ social.link }}'});"
+		 target="_blank" rel="noopener" class="share-btn linkedin">
+		{{ 'linkedin'|svgicon }}
+		<span class="visually-hidden">{{ __( 'Share on', 'planet4-master-theme' ) }} LinkedIn</span>
 	</a>
 	<!-- Email -->
 	<a href="mailto:?subject=Listen to this, from Greenpeace Africa!&body=Listen to this, from Greenpeace Africa! %0D%0D{% if social.description %}{{ social.description|striptags|url_encode }} {% endif %}{{ (socialLink ~ '&utm_source=email')|url_encode }}%0D%0D"
@@ -28,6 +29,7 @@
 		{{ 'envelope'|svgicon }}
 		<span class="visually-hidden">{{ __( 'Share via', 'planet4-master-theme' ) }} Email</span>
 	</a>
+	</div>
 	<!-- Google preferred source -->
 	{% if google_preferred_source %}
 		<a
@@ -35,6 +37,7 @@
 			class="google-preferred-source-link"
 			href="https://google.com/preferences/source?q={{ google_preferred_source.domain }}"
 			target="_blank"
+			rel="noopener"
 		>
 			<img src="{{ google_preferred_source.image }}" alt="Google preferred source" />
 			<span>{{ __( 'Add as a preferred source on Google', 'planet4-master-theme' ) }}</span>
