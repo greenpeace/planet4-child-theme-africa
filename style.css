@@ -841,6 +841,8 @@ Text Domain: planet4-child-theme-africa
 /* Share buttons mobile: equal circles in one row, Google button full width below */
 @media (max-width: 575.98px) {
     .share-buttons .share-buttons-icons {
+        flex: 1 0 100%;
+        justify-content: space-between;
         gap: 12px;
     }
     .share-buttons .share-btn {
