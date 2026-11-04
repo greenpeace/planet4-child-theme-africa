@@ -820,3 +820,63 @@ Text Domain: planet4-child-theme-africa
         line-height: 1.2em;
     }
 }
+
+/* Share buttons: LinkedIn colour */
+.share-buttons .share-btn.linkedin { color: #0a66c2; }
+.share-buttons .share-btn.linkedin svg { fill: #0a66c2; }
+
+/* Share buttons: icons left, Google preferred source button right */
+.share-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+.share-buttons .share-buttons-icons {
+    display: flex;
+    align-items: center;
+}
+
+/* Share buttons mobile: equal circles in one row, Google button full width below */
+@media (max-width: 575.98px) {
+    .share-buttons .share-buttons-icons {
+        gap: 12px;
+    }
+    .share-buttons .share-btn {
+        flex: 0 0 44px;
+        width: 44px;
+        height: 44px;
+        margin: 0;
+        padding: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+    .share-buttons .share-btn svg {
+        width: 20px;
+        height: 20px;
+    }
+    .share-buttons .google-preferred-source-link {
+        flex: 1 0 100%;
+        width: 100%;
+        min-height: 44px;
+        margin: 4px 0 0;
+        padding: 10px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        text-align: left;
+    }
+    .share-buttons .google-preferred-source-link img {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+    }
+    .share-buttons .google-preferred-source-link span {
+        font-size: 0.95rem;
+        line-height: 1.25;
+    }
+}
