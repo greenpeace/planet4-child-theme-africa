@@ -1,5 +1,13 @@
 [
     {
+        "name": "African Union",
+        "id": "african_union",
+        "country_name_french": "Union africaine",
+        "leader_name": "African Union",
+        "leader_twitter_account": "@_AfricanUnion",
+        "official_twitter_account": "_AfricanUnion"
+    },
+    {
         "name": "Angola",
         "id": "ao",
         "country_name_french": "Angola",
